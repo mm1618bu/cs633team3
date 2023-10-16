@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './Header';
+import RestaurantCard from './RestaurantCard';
+import Footer from './Footer';
+import restaurantsData from './restaurantList.json';
+import FoodCategoryList from './FoodCategoryList';
+import OrderPage from './OrderPage';
 
 function App() {
+  const [restaurants, setRestaurants] = useState([]);
+
+  useEffect(() => {
+    // Use the JSON data directly
+    setRestaurants(restaurantsData);
+  }, []); // Empty dependency array to ensure the effect runs only once
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <FoodCategoryList />
+      <OrderPage />
+      <Footer />
+      <div className="home-page">
+        {restaurants.map((restaurant, index) => (
+          <RestaurantCard key={index} restaurant={restaurant} />
+        ))}
+      </div>
     </div>
+    
   );
 }
 
