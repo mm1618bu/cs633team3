@@ -5,7 +5,12 @@ import RestaurantCard from './RestaurantCard';
 import Footer from './Footer';
 import restaurantsData from './restaurantList.json';
 import FoodCategoryList from './FoodCategoryList';
-import OrderPage from './OrderPage';
+import McDonalds from './McDonalds';
+import BurgerKing from './BurgerKing';
+import InAndOut from './InAndOut';
+import Subway from './Subway';
+import Wendys from './Wendys';
+import Chipotle from './Chipotle';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -19,7 +24,12 @@ function App() {
     <div className="App">
       <Header />
       <FoodCategoryList />
-      <OrderPage />
+      <McDonalds />
+      <BurgerKing />
+      <Wendys />
+      <InAndOut />
+      <Chipotle />
+      <Subway />
       <Footer />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
