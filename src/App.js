@@ -11,6 +11,9 @@ import Chipotle from './Components/Chipotle';
 import Subway from './Components/Subway';
 import RestaurantCard from './Components/RestaurantCard';
 import restaurantsData from './Components/restaurantList.json';
+import PaneraBread from './Components/PaneraBread';
+import OliveGarden from './Components/OliveGarden';
+import TGIFridays from './Components/TGIFridays';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -30,6 +33,9 @@ function App() {
       <InAndOut />
       <Chipotle />
       <Subway />
+      <PaneraBread />
+      <OliveGarden />
+      <TGIFridays />
       <Footer />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
