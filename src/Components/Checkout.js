@@ -63,9 +63,6 @@ class Checkout extends Component {
 
   // Function to handle checkout
   handleCheckout = () => {
-    // You can implement the logic for processing the checkout here
-    // For example, send the form data to your backend, integrate with payment gateway, etc.
-    // This is a placeholder function, and you need to replace it with your implementation.
     console.log('Checkout clicked. Data to submit:', this.state);
   };
 
@@ -74,7 +71,6 @@ class Checkout extends Component {
       <div>
         <h2>Checkout</h2>
 
-        {/* Customer Information Form */}
         <h3>Customer Information</h3>
         <form>
         <input
@@ -101,7 +97,6 @@ class Checkout extends Component {
         </form>
 
 
-        {/* Delivery Information Form */}
         <h3>Delivery Information</h3>
         <form>
         <input
@@ -118,11 +113,9 @@ class Checkout extends Component {
             value={this.state.deliveryInfo.deliveryTime}
             onChange={this.handleDeliveryInfoChange}
         />
-        {/* Additional delivery information inputs can be added here */}
         </form>
 
 
-{/* Payment Information Form */}
 <h3>Payment Information</h3>
 <form>
         <input
@@ -153,7 +146,6 @@ class Checkout extends Component {
             value={this.state.paymentInfo.cvv}
             onChange={this.handlePaymentInfoChange}
         />
-        {/* Add the tip option field */}
         <input
             type="text"
             name="tip"
@@ -161,11 +153,9 @@ class Checkout extends Component {
             value={this.state.paymentInfo.tip}
             onChange={this.handlePaymentInfoChange}
         />
-        {/* Additional payment information inputs can be added here */}
 </form>
 
 
-        {/* Coupon Code Form */}
         <h3>Coupon Code</h3>
         <form>
           <input

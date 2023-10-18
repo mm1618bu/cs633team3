@@ -6,7 +6,6 @@ const LoginForm = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Replace these with your actual user data and authentication logic
     const fakeUser = {
       username: 'demoUser',
       password: 'password123',
@@ -14,7 +13,7 @@ const LoginForm = () => {
   
     if (username === fakeUser.username && password === fakeUser.password) {
       // Authentication successful
-      alert('Login successful!'); // You can replace this with actual redirect logic
+      alert('Login successful!');
     } else {
       // Authentication failed
       alert('Invalid username or password. Please try again.');
