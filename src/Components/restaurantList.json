@@ -86,6 +86,45 @@
       "deliveryTime": 11,
       "cuisine": "Seafood",
       "image": "red_lobster.jpg"
+    },
+    {
+      "name": "McDonald's",
+      "rating": 2.5,
+      "distance": 3.5,
+      "deliveryTime": 15,
+      "cuisine": "Fast Food",
+      "image": "mcdonalds.jpg"
+    },
+    {
+      "name": "Burger King",
+      "rating": 2.2,
+      "distance": 2.8,
+      "deliveryTime": 10,
+      "cuisine": "Fast Food",
+      "image": "burger_king.jpg"
+    },
+    {
+      "name": "Wendy's",
+      "rating": 3.0,
+      "distance": 4.2,
+      "deliveryTime": 20,
+      "cuisine": "Fast Food",
+      "image": "wendys.jpg"
+    },
+    {
+      "name": "Chipotle",
+      "rating": 4.0,
+      "distance": 5.1,
+      "deliveryTime": 25,
+      "cuisine": "Mexican",
+      "image": "chipotle.jpg"
+    },
+    {
+      "name": "In-N-Out Burger",
+      "rating": 4.6,
+      "distance": 7.3,
+      "deliveryTime": 30,
+      "cuisine": "Fast Food",
+      "image": "innout.jpg"
     }
   ]
-  
