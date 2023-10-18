@@ -14,6 +14,10 @@ import restaurantsData from './Components/restaurantList.json';
 import PaneraBread from './Components/PaneraBread';
 import OliveGarden from './Components/OliveGarden';
 import TGIFridays from './Components/TGIFridays';
+import Checkout from './Components/Checkout';
+import LoginForm from './Components/LoginForm';
+import ForgotPassword from './Components/ForgotPassword';
+import CreateAccount from './Components/CreateAccount';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -36,6 +40,10 @@ function App() {
       <PaneraBread />
       <OliveGarden />
       <TGIFridays />
+      <Checkout />
+      <LoginForm />
+      <ForgotPassword />
+      <CreateAccount />
       <Footer />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
