@@ -18,7 +18,10 @@ import Checkout from './Components/Checkout';
 import LoginForm from './Components/LoginForm';
 import ForgotPassword from './Components/ForgotPassword';
 import CreateAccount from './Components/CreateAccount';
-
+import Confirmation from './Components/Confirmation';
+import AccountCreation from './Components/AccountCreation';
+import RewardsTracking from './Components/RewardsTracking';
+import AddDriverForm from './Components/addDriverForm';
 function App() {
   const [restaurants, setRestaurants] = useState([]);
 
@@ -41,9 +44,13 @@ function App() {
       <OliveGarden />
       <TGIFridays />
       <Checkout />
+      <Confirmation />
       <LoginForm />
       <ForgotPassword />
+      <AccountCreation />
       <CreateAccount />
+      <RewardsTracking />
+      <AddDriverForm />
       <Footer />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
