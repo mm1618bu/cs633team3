@@ -22,6 +22,8 @@ import Confirmation from './Components/Confirmation';
 import AccountCreation from './Components/AccountCreation';
 import RewardsTracking from './Components/RewardsTracking';
 import AddDriverForm from './Components/addDriverForm';
+import DriverPortal from './Components/DriverPortal';
+import RestaurantPortal from './Components/RestaurantPortal';
 function App() {
   const [restaurants, setRestaurants] = useState([]);
 
@@ -52,6 +54,8 @@ function App() {
       <RewardsTracking />
       <AddDriverForm />
       <Footer />
+      <DriverPortal />
+      <RestaurantPortal />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
           <RestaurantCard key={index} restaurant={restaurant} />

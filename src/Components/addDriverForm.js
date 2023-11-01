@@ -41,7 +41,7 @@ class AddDriverForm extends Component {
     return (
       <div>
         <h2>Add New Driver</h2>
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <label>Name:
             <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
           </label>
@@ -54,7 +54,7 @@ class AddDriverForm extends Component {
             <input type="text" name="vehicle" value={this.state.vehicle} onChange={this.handleInputChange} />
           </label>
           <br />
-          <button type="submit">Add Driver</button>
+          <button type="submit" onSubmit={this.handleSubmit}>Add Driver</button>
         </form>
       </div>
     );
