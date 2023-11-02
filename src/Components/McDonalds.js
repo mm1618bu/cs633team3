@@ -87,8 +87,8 @@ const McDonalds = () => {
               <p>{item.description}</p>
               <p>Price: ${item.price}</p>
               <p>Calories: {item.calories} kcal</p>
-              <button onClick={() => addToCart(item)}>Add to Cart</button>
-              <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
+              <button onClick={() => addToCart(item)}>Add</button>
+              <button onClick={() => removeFromCart(item)}>Remove</button>
             </div>
             <img src={item.image} alt={item.name} />
           </div>

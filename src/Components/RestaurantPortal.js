@@ -1,16 +1,79 @@
 import React, { useState } from 'react';
 
 const RestaurantPortal = () => {
-  const [orders, setOrders] = useState([
-    {
-      id: 1,
-      customer: 'Customer A',
-      items: ['Burger', 'Fries', 'Soda'],
-      total: 20.00,
-      status: 'Pending',
-    },
-    // Add more orders here
-  ]);
+    const [orders, setOrders] = useState([
+        {
+          "id": 1,
+          "customer": "Customer A",
+          "items": ["Burger", "Fries", "Soda"],
+          "total": 20.00,
+          "status": "Pending"
+        },
+        {
+          "id": 2,
+          "customer": "Customer B",
+          "items": ["Pizza", "Salad", "Water"],
+          "total": 25.00,
+          "status": "Pending"
+        },
+        {
+          "id": 3,
+          "customer": "Customer C",
+          "items": ["Sandwich", "Chips", "Iced Tea"],
+          "total": 15.50,
+          "status": "Pending"
+        },
+        {
+          "id": 4,
+          "customer": "Customer D",
+          "items": ["Steak", "Mashed Potatoes", "Wine"],
+          "total": 45.00,
+          "status": "Pending"
+        },
+        {
+          "id": 5,
+          "customer": "Customer E",
+          "items": ["Sushi", "Sake", "Edamame"],
+          "total": 30.00,
+          "status": "Pending"
+        },
+        {
+          "id": 6,
+          "customer": "Customer F",
+          "items": ["Taco", "Guacamole", "Margarita"],
+          "total": 18.75,
+          "status": "Pending"
+        },
+        {
+          "id": 7,
+          "customer": "Customer G",
+          "items": ["Chicken Wings", "Onion Rings", "Beer"],
+          "total": 22.00,
+          "status": "Pending"
+        },
+        {
+          "id": 8,
+          "customer": "Customer H",
+          "items": ["Pasta", "Garlic Bread", "Soft Drink"],
+          "total": 16.25,
+          "status": "Pending"
+        },
+        {
+          "id": 9,
+          "customer": "Customer I",
+          "items": ["Tofu Stir-Fry", "Brown Rice", "Green Tea"],
+          "total": 13.50,
+          "status": "Pending"
+        },
+        {
+          "id": 10,
+          "customer": "Customer J",
+          "items": ["Sub Sandwich", "Chips", "Iced Coffee"],
+          "total": 12.00,
+          "status": "Pending"
+        }
+      ]);
+      
 
   // Function to accept an order
   const acceptOrder = (order) => {
@@ -84,7 +147,7 @@ const RestaurantPortal = () => {
                   <button onClick={() => markPickedUp(order)}>Mark Picked Up</button>
                 )}
                 <button onClick={() => stockOutItem(order, 'Burger')}>Stock Out</button>
-                <button onClick={() => changePrice(order, 25.00)}>Change Price</button>
+                <button onClick={() => changePrice(order, 75.00)}>Change Price</button>
               </td>
             </tr>
           ))}

@@ -1416,6 +1416,11 @@
   justify-content: center;
 }
 
+.restaurant-grid h2{
+  justify-content: stretch;
+  color: #f57c00;
+}
+
 .restaurant-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -1502,6 +1507,17 @@
   max-height: 200px;
 }
 
+.food-card button {
+  background-color: lightcoral; /* Light red color */
+  padding: 5px; /* Adjust the padding as needed */
+  border-radius: 16px; /* To create a rounded button */
+  border: none; /* Remove the default button border */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  margin: 4px;
+}
+
 .food-info {
   margin-top: 10px;
 }
@@ -1521,4 +1537,67 @@
   margin-left: 20px; /* Optional: Add some margin for spacing */
   border: 1px solid #ddd; /* Optional: Add a border for visual separation */
   padding: 10px; /* Optional: Add padding for content inside the shopping cart */
+}
+
+.checkout-container {
+  max-width: 900px; /* Increased max width for side-by-side sections */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style headings with class 'check' */
+h2.check {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3.check {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Style form inputs within form with ID 'intake-form' */
+#intake-form input[type="text"],
+#intake-form input[type="email"],
+#intake-form input[type="tel"],
+#intake-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+/* Flexbox for side-by-side sections */
+.form-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1;
+}
+
+#confirm-cart{
+  list-style-type: none;
+}
+
+.order-tabs {
+  display: flex;
+}
+
+.order-tab {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
 }

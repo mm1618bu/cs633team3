@@ -15,6 +15,30 @@ const FoodCategoryList = () => {
         name: 'Meat',
         image: './src/meat.jpg',
       },
+      {
+        name: 'Fruits',
+        image: '../img/italian.png',
+      },
+      {
+        name: 'Vegetables',
+        image: './src/vegetables.jpg',
+      },
+      {
+        name: 'Meat',
+        image: './src/meat.jpg',
+      },
+      {
+        name: 'Fruits',
+        image: '../img/italian.png',
+      },
+      {
+        name: 'Vegetables',
+        image: './src/vegetables.jpg',
+      },
+      {
+        name: 'Meat',
+        image: './src/meat.jpg',
+      },
     // Add more categories and images as needed
   ];
 

@@ -15,7 +15,7 @@ function RestaurantCard() {
       {restaurantsData.map((restaurant, index) => (
         <div className="restaurant-card" key={index}>
           <img className="restaurant-image" src={restaurant.image} alt={restaurant.name} />
-          <h2 className="restaurant-name">{restaurant.name}</h2>
+          <h2 className="restaurant-name">{restaurant.name} &copy;</h2>
           <p className="restaurant-delivery-time"> {restaurant.distance} mi. * {restaurant.deliveryTime} mins</p>
           <p className="restaurant-tating">{restaurant.rating}</p>
         </div>

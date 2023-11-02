@@ -6,8 +6,14 @@ const Confirmation = () => {
         items: [
           { name: 'Item 1', price: 10 },
           { name: 'Item 2', price: 15 },
+          { name: 'Item 3', price: 20 },
+          { name: 'Item 4', price: 25 },
+          { name: 'Item 5', price: 30 },
+          { name: 'Item 6', price: 35 },
+          { name: 'Item 7', price: 40 },
+          { name: 'Item 8', price: 45 },
         ],
-        totalAmount: 25,
+        totalAmount: 220,
         status: 'Paid',
       };  
   return (
@@ -16,7 +22,7 @@ const Confirmation = () => {
       <p>Thank you for your order! Your order details are as follows:</p>
       <ul>
         {order.items.map((item, index) => (
-          <li key={index}>
+          <li id="confirm-cart" key={index}>
             {item.name} - ${item.price}
           </li>
         ))}
