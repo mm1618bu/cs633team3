@@ -46,7 +46,7 @@ const FoodCategoryList = () => {
     <div className="food-category-list">
       {categories.map((category, index) => (
         <div key={index} className="category-item">
-          <img src={category.image} alt={category.name} />
+          <img src={category.image} alt="missing" />
           <p>{category.name}</p>
         </div>
       ))}

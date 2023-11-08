@@ -101,7 +101,7 @@ class Checkout extends Component {
 
           <div className="form-section">
             <h3 className="check">Delivery Information</h3>
-            <form>
+            <form id='intake-form'>
               <input
                 type="text"
                 name="address"
@@ -121,7 +121,7 @@ class Checkout extends Component {
 
           <div className="form-section">
             <h3 className="check">Payment Information</h3>
-            <form>
+            <form id='intake-form'>
               <input
                 type="text"
                 name="customerName"

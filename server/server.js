@@ -9,6 +9,10 @@ mongoose.connect('mongodb+srv://administrator:developer@fooder.eduq39h.mongodb.n
 const exampleSchema = new mongoose.Schema({
     title: String,
     description: String,
+    _id: String,
+    rating: String,
+    deliveryTime: String,
+    cuisine: String
   });
   
   const Example = mongoose.model('Example', exampleSchema);
