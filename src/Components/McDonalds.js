@@ -53,50 +53,74 @@ const foodItems = [
       "image": "diet_coke.jpg"
     }
   ];
-const McDonalds = () => {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (item) => {
-    // Check if the item is already in the cart
-    const itemIndex = cartItems.findIndex((cartItem) => cartItem.name === item.name);
-
-    if (itemIndex === -1) {
-      // Item is not in the cart, so add it with a quantity of 1
-      setCartItems([...cartItems, { ...item, quantity: 1 }]);
-    } else {
-      // Item is already in the cart, so update its quantity
-      const updatedCartItems = [...cartItems];
-      updatedCartItems[itemIndex].quantity += 1;
+  const McDonalds = () => {
+    const [cartItems, setCartItems] = useState([]);
+  
+    const addToCart = (item) => {
+      const itemIndex = cartItems.findIndex((cartItem) => cartItem.name === item.name);
+  
+      if (itemIndex === -1) {
+        setCartItems([...cartItems, { ...item, quantity: 1 }]);
+      } else {
+        const updatedCartItems = [...cartItems];
+        updatedCartItems[itemIndex].quantity += 1;
+        setCartItems(updatedCartItems);
+      }
+    };
+  
+    const removeFromCart = (item) => {
+      const updatedCartItems = cartItems.filter((cartItem) => cartItem.name !== item.name);
       setCartItems(updatedCartItems);
-    }
-  };
-
-  const removeFromCart = (item) => {
-    const updatedCartItems = cartItems.filter((cartItem) => cartItem.name !== item.name);
-    setCartItems(updatedCartItems);
-  };
-
-  return (
-    <div className="order-page">
-      <h1>Featured Items</h1>
-      <div className="food-grid">
-        {foodItems.map((item, index) => (
-          <div key={index} className="food-card">
-            <div className="food-info">
-              <h2>{item.name}</h2>
-              <p>{item.description}</p>
-              <p>Price: ${item.price}</p>
-              <p>Calories: {item.calories} kcal</p>
-              <button onClick={() => addToCart(item)}>Add</button>
-              <button onClick={() => removeFromCart(item)}>Remove</button>
+    };
+  
+    const increaseQuantity = (item) => {
+      const updatedCartItems = cartItems.map((cartItem) => {
+        if (cartItem.name === item.name) {
+          cartItem.quantity += 1;
+        }
+        return cartItem;
+      });
+      setCartItems(updatedCartItems);
+    };
+  
+    const decreaseQuantity = (item) => {
+      const updatedCartItems = cartItems.map((cartItem) => {
+        if (cartItem.name === item.name && cartItem.quantity > 1) {
+          cartItem.quantity -= 1;
+        }
+        return cartItem;
+      });
+      setCartItems(updatedCartItems);
+    };
+  
+    return (
+      <div className="order-page">
+        <h1>Featured Items</h1>
+        <div className="food-grid">
+          {foodItems.map((item, index) => (
+            <div key={index} className="food-card">
+              <div className="food-info">
+                <h2>{item.name}</h2>
+                <p>{item.description}</p>
+                <p>Price: ${item.price}</p>
+                <p>Calories: {item.calories} kcal</p>
+                <button onClick={() => addToCart(item)}>Add</button>
+                <button onClick={() => removeFromCart(item)}>Remove</button>
+                {cartItems.find((cartItem) => cartItem.name === item.name) && (
+                  <div className="quantity-control">
+                    <button onClick={() => decreaseQuantity(item)}>-</button>
+                    <span>{cartItems.find((cartItem) => cartItem.name === item.name).quantity}</span>
+                    <button onClick={() => increaseQuantity(item)}>+</button>
+                  </div>
+                )}
+              </div>
+              <img src={item.image} alt={item.name} />
             </div>
-            <img src={item.image} alt={item.name} />
-          </div>
-        ))}
+          ))}
+        </div>
+        <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
       </div>
-      <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
-    </div>
-  );
-};
-
-export default McDonalds;
+    );
+  };
+  
+  export default McDonalds;
