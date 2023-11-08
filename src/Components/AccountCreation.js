@@ -18,14 +18,12 @@ const AccountCreation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to the server for account creation)
-    // You can add your API call or authentication logic here.
   };
 
   return (
     <div>
       <h2>Create an Account</h2>
-      <form onSubmit={handleSubmit}>
+      <form id="intake-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
           <input

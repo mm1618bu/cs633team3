@@ -1570,7 +1570,7 @@ h3.check {
 #intake-form input[type="email"],
 #intake-form input[type="tel"],
 #intake-form input[type="password"] {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 5px 5px;
   border: 1px solid #ccc;
