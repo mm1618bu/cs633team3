@@ -6,6 +6,7 @@ const DriverPortal = () => {
           "id": 1,
           "store": "Store A",
           "customer": "Customer X",
+          "Address": "123 Main St",
           "total": 25.00,
           "tip": 5.00
         },
@@ -13,6 +14,7 @@ const DriverPortal = () => {
           "id": 2,
           "store": "Store B",
           "customer": "Customer Y",
+          "Address": "123 Main St",
           "total": 30.00,
           "tip": 6.00
         },
@@ -20,6 +22,7 @@ const DriverPortal = () => {
           "id": 3,
           "store": "Store C",
           "customer": "Customer Z",
+          "Address": "123 Main St",
           "total": 40.00,
           "tip": 8.00
         },
@@ -27,6 +30,7 @@ const DriverPortal = () => {
           "id": 4,
           "store": "Store D",
           "customer": "Customer W",
+          "Address": "123 Main St",
           "total": 22.50,
           "tip": 4.50
         },
@@ -34,6 +38,7 @@ const DriverPortal = () => {
           "id": 5,
           "store": "Store E",
           "customer": "Customer V",
+          "Address": "123 Main St",
           "total": 15.00,
           "tip": 3.00
         },
@@ -41,6 +46,7 @@ const DriverPortal = () => {
           "id": 6,
           "store": "Store F",
           "customer": "Customer U",
+          "Address": "123 Main St",
           "total": 50.00,
           "tip": 10.00
         },
@@ -48,6 +54,7 @@ const DriverPortal = () => {
           "id": 7,
           "store": "Store G",
           "customer": "Customer T",
+          "Address": "123 Main St",
           "total": 27.50,
           "tip": 5.50
         },
@@ -55,6 +62,7 @@ const DriverPortal = () => {
           "id": 8,
           "store": "Store H",
           "customer": "Customer S",
+          "Address": "123 Main St",
           "total": 35.00,
           "tip": 7.00
         },
@@ -62,6 +70,7 @@ const DriverPortal = () => {
           "id": 9,
           "store": "Store I",
           "customer": "Customer R",
+          "Address": "123 Main St",
           "total": 12.00,
           "tip": 2.40
         },
@@ -69,6 +78,7 @@ const DriverPortal = () => {
           "id": 10,
           "store": "Store J",
           "customer": "Customer Q",
+          "Address": "123 Main St",
           "total": 60.00,
           "tip": 12.00
         },
@@ -76,6 +86,7 @@ const DriverPortal = () => {
           "id": 11,
           "store": "Store K",
           "customer": "Customer P",
+          "Address": "123 Main St",
           "total": 18.75,
           "tip": 3.75
         }
@@ -86,6 +97,7 @@ const DriverPortal = () => {
 
   const [pickedUpOrders, setPickedUpOrders] = useState([]);
   const [completedOrders, setCompletedOrders] = useState([]);
+  const [deniedOrders, setDeniedOrders] = useState([]);
 
   // Function to move an order to the "Picked Up" tab
   const pickUpOrder = (order) => {
@@ -99,6 +111,13 @@ const DriverPortal = () => {
     setCompletedOrders([...completedOrders, order]);
   };
 
+  const denyOrder = (order) => {
+    setAvailableOrders(availableOrders.filter((o) => o.id !== order.id));
+    setPickedUpOrders(pickedUpOrders.filter((o) => o.id !== order.id));
+    setCompletedOrders(completedOrders.filter((o) => o.id !== order.id));
+    setDeniedOrders([...deniedOrders, order]);
+  };
+
   return (
     <div>
       <h1>Driver Portal</h1>
@@ -110,9 +129,11 @@ const DriverPortal = () => {
               <li id="confirm-cart" key={order.id}>
                 <p>Store: {order.store}</p>
                 <p>Customer: {order.customer}</p>
+                <p>Address: {order.Address}</p>
                 <p>Total: ${order.total}</p>
                 <p>Tip: ${order.tip}</p>
                 <button onClick={() => pickUpOrder(order)}>Pick Up</button>
+                <button onClick={() => denyOrder(order)}>Deny</button>
               </li>
             ))}
           </ul>
