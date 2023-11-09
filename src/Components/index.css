@@ -1609,3 +1609,74 @@ h3.check {
   border: 1px solid #ccc;
   background-color: #f9f9f9;
 }
+
+/* VerticalNavbar.css */
+.vertical-navbar {
+  background-color: #333;
+  width: 200px;
+  color: white;
+}
+
+.vertical-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vertical-navbar li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.vertical-navbar li:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.topheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.top-logo-container {
+  flex: 1;
+}
+
+.top-options {
+  display: flex;
+  align-items: center;
+}
+
+.top-pickup-delivery-options {
+  display: flex;
+  gap: 10px;
+}
+
+.top-search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  width: 250px;
+}
+
+top-button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+top-button:hover {
+  background-color: #e64a19;
+}
