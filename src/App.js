@@ -26,6 +26,8 @@ import DriverPortal from './Components/DriverPortal';
 import RestaurantPortal from './Components/RestaurantPortal';
 import DashPass from './Components/dashpass';
 import VerticalNavbar from './Components/VerticalNavbar';
+
+
 function App() {
   const [restaurants, setRestaurants] = useState([]);
 

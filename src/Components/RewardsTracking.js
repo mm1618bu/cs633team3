@@ -1,5 +1,5 @@
-// RewardsTracking.js
 import React, { useState, useEffect } from 'react';
+import './index.css';
 
 const RewardsTracking = () => {
   const [rewards, setRewards] = useState([]);
@@ -24,15 +24,15 @@ const RewardsTracking = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Rewards Tracking</h2>
-      <p>Your Rewards:</p>
+    <div id='rewards'>
+      <h2 id='rewards-tracking'>Rewards Tracking</h2>
+      <p id='my-rewards'>Your Rewards:</p>
       <ul>
         {rewards.map((reward, index) => (
           <li key={index}>{reward}</li>
         ))}
       </ul>
-      <p>Next Reward in: {timeUntilNextReward} days</p>
+      <p id='tracking'>Next Reward in: {timeUntilNextReward} days</p>
     </div>
   );
 };

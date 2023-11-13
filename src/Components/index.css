@@ -1416,7 +1416,7 @@
 
 .restaurant-grid h2{
   justify-content: stretch;
-  color: #f57c00;
+  color: red;
 }
 
 .restaurant-card {
@@ -1428,6 +1428,30 @@
   text-align: left;
   cursor: pointer;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
 
 .restaurant-image {
   width: 100%;
@@ -1566,20 +1590,30 @@ h3.check {
 }
 
 
+/* Apply styles to specific input types in the form */
 #intake-form input[type="text"],
 #intake-form input[type="email"],
 #intake-form input[type="tel"],
 #intake-form input[type="password"] {
-  width: 50%;
-  padding: 10px;
-  margin: 5px 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  width: 100%; /* Take up the full width of the container */
+  padding: 12px; /* Increased padding for better spacing */
+  margin: 8px 0; /* Adjusted margin for better spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 2px solid #4CAF50; /* A green border */
+  border-radius: 4px;
+  outline: none; /* Remove the default focus outline */
 }
 
+/* Style the form container */
 #intake-form {
-  margin: 5px;
+  max-width: 500px; /* Set a maximum width for better readability */
+  margin: 20px auto; /* Center the form horizontally and provide some spacing */
+  padding: 16px;
+  background-color: #f2f2f2; /* Light gray background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
 }
+
 
 .form-sections {
   display: flex;
@@ -1668,7 +1702,7 @@ input[type="text"] {
   width: 250px;
 }
 
-top-button {
+#top-button {
   background-color: #ff5722;
   color: white;
   border: none;
@@ -1677,6 +1711,32 @@ top-button {
   cursor: pointer;
 }
 
-top-button:hover {
+#top-button:hover {
   background-color: #e64a19;
+}
+
+.shopping-cart > ol > li{
+  list-style-type: none;
+}
+
+#rewards {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rewards-tracking {
+  color: #333;
+}
+
+#my-rewards {
+  font-weight: bold;
+}
+
+
+#tracking {
+  color: #555;
 }

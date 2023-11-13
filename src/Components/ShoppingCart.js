@@ -8,6 +8,8 @@ const ShoppingCart = ({ cartItems }) => {
   return (
     <div className="shopping-cart">
       <h2>Shopping Cart</h2>
+      <br></br>
+      <h3>My items</h3>
       <ol>
         {cartItems.map((item, index) => (
           <li key={index}>
