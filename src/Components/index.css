@@ -1639,10 +1639,22 @@ h3.check {
 .order-tab {
   flex: 1;
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.order-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.order-tab.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
 
 /* VerticalNavbar.css */
 .vertical-navbar {
@@ -1740,3 +1752,55 @@ input[type="text"] {
 #tracking {
   color: #555;
 }
+
+#store {
+  margin: 20px;
+}
+
+#store h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#store-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#store-table th, #store-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#store-table th {
+  background-color: #f5f5f5;
+}
+
+#store-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+#store-table button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#store-table button:hover {
+  background-color: red;
+}
+
+#store-table input {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+

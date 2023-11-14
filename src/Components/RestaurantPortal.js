@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import './index.css';
 
 const RestaurantPortal = () => {
   const [orders, setOrders] = useState([
@@ -135,10 +136,10 @@ const RestaurantPortal = () => {
   };
 
   return (
-    <div>
+    <div id='store'>
       <h1>Restaurant Portal</h1>
-      <table>
-        <thead>
+      <table id='store-table'>
+        <thead id='store-table-head'>
           <tr>
             <th>Customer</th>
             <th>Items</th>

@@ -1,6 +1,7 @@
 // Checkout.js
 
 import React, { Component } from 'react';
+import './index.css';
 
 class Checkout extends Component {
   constructor(props) {
@@ -173,7 +174,7 @@ class Checkout extends Component {
             />
           </form>
         </div>
-        <button onClick={this.handleCheckout}>Checkout</button>
+        <button onClick={this.handleCheckout}>Place Order</button>
       </div>
     );
   }
