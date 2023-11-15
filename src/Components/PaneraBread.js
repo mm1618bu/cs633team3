@@ -79,6 +79,27 @@ const PaneraBread = () => {
     setCartItems(updatedCartItems);
   };
 
+  const increaseQuantity = (item) => {
+    const updatedCartItems = cartItems.map((cartItem) => {
+      if (cartItem.name === item.name) {
+        cartItem.quantity += 1;
+      }
+      return cartItem;
+    });
+    setCartItems(updatedCartItems);
+  };
+
+  const decreaseQuantity = (item) => {
+    const updatedCartItems = cartItems.map((cartItem) => {
+      if (cartItem.name === item.name && cartItem.quantity > 1) {
+        cartItem.quantity -= 1;
+      }
+      return cartItem;
+    });
+    setCartItems(updatedCartItems);
+  };
+
+
   return (
     <div className="order-page">
       <h1>Featured Items</h1>
@@ -92,6 +113,13 @@ const PaneraBread = () => {
               <p>Calories: {item.calories} cal</p>
               <button onClick={() => addToCart(item)}>Add to Cart</button>
               <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
+              {cartItems.find((cartItem) => cartItem.name === item.name) && (
+                  <div className="quantity-control">
+                    <button onClick={() => decreaseQuantity(item)}>-</button>
+                    <span>{cartItems.find((cartItem) => cartItem.name === item.name).quantity}</span>
+                    <button onClick={() => increaseQuantity(item)}>+</button>
+                  </div>
+                )}
             </div>
             <img src={item.image} alt={item.name} />
           </div>
