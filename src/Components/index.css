@@ -1409,7 +1409,7 @@
 
 .restaurant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 20px;
   justify-content: center;
 }
@@ -1590,28 +1590,27 @@ h3.check {
 }
 
 
-/* Apply styles to specific input types in the form */
 #intake-form input[type="text"],
 #intake-form input[type="email"],
 #intake-form input[type="tel"],
 #intake-form input[type="password"] {
-  width: 100%; /* Take up the full width of the container */
-  padding: 12px; /* Increased padding for better spacing */
-  margin: 8px 0; /* Adjusted margin for better spacing */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  border: 2px solid #4CAF50; /* A green border */
+  width: 100%; 
+  padding: 12px;
+  margin: 8px 0; 
+  box-sizing: border-box; 
+  border: 2px solid #4CAF50; 
   border-radius: 4px;
-  outline: none; /* Remove the default focus outline */
+  outline: none; 
 }
 
-/* Style the form container */
+
 #intake-form {
-  max-width: 500px; /* Set a maximum width for better readability */
-  margin: 20px auto; /* Center the form horizontally and provide some spacing */
+  max-width: 500px; 
+  margin: 20px auto; 
   padding: 16px;
-  background-color: #f2f2f2; /* Light gray background color */
+  background-color: #f2f2f2; 
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -1804,8 +1803,6 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-/* Confirmation.css */
-/* Basic styling for the confirmation container */
 .confirmation-container {
   max-width: 600px;
   margin: 20px auto;
@@ -1821,18 +1818,18 @@ input[type="text"] {
   color: #333;
 }
 
-/* Styling for the text content */
+
 .confirmation-text {
   margin: 10px 0;
 }
 
-/* Styling for the list of items */
+
 .confirmation-list {
   list-style-type: none;
   padding: 0;
 }
 
-/* Styling for each item in the list */
+
 .confirmation-item {
   margin-bottom: 8px;
   padding: 8px;
@@ -1840,19 +1837,19 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-/* Styling for the total amount */
+
 .confirmation-total {
   margin: 10px 0;
   font-weight: bold;
 }
 
-/* Styling for the status text based on its value */
+
 .confirmation-status {
   margin: 10px 0;
   font-weight: bold;
 }
 
-/* Styling for the status text based on its value */
+
 .status-text {
-  color: green; /* You can customize the color based on the status value */
+  color: green; 
 }
