@@ -87,7 +87,7 @@ const BurgerKing = () => {
               <h2>{item.name}</h2>
               <p>{item.description}</p>
               <p>Price: ${item.price}</p>
-              <p>Calories: {item.calories} kcal</p>
+              <p>Calories: {item.calories} cal</p>
               <button onClick={() => addToCart(item)}>Add to Cart</button>
               <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
             </div>

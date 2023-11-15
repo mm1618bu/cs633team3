@@ -103,7 +103,7 @@ const foodItems = [
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
                 <p>Price: ${item.price}</p>
-                <p>Calories: {item.calories} kcal</p>
+                <p>Calories: {item.calories} cal</p>
                 <button onClick={() => addToCart(item)}>Add</button>
                 <button onClick={() => removeFromCart(item)}>Remove</button>
                 {cartItems.find((cartItem) => cartItem.name === item.name) && (
