@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './Components/index.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import FoodCategoryList from './Components/FoodCategoryList';

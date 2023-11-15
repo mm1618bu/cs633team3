@@ -41,7 +41,7 @@ class AddDriverForm extends Component {
     return (
       <div>
         <h2>Add New Driver</h2>
-        <form>
+        <form id='intake-form'>
           <label>Name:
             <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
           </label>
