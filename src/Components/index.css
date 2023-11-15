@@ -1804,3 +1804,55 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+/* Confirmation.css */
+/* Basic styling for the confirmation container */
+.confirmation-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.confirmation-header {
+  color: #333;
+}
+
+/* Styling for the text content */
+.confirmation-text {
+  margin: 10px 0;
+}
+
+/* Styling for the list of items */
+.confirmation-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each item in the list */
+.confirmation-item {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+/* Styling for the total amount */
+.confirmation-total {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Styling for the status text based on its value */
+.confirmation-status {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Styling for the status text based on its value */
+.status-text {
+  color: green; /* You can customize the color based on the status value */
+}
