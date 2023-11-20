@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css'; // Import your CSS file
 import ShoppingCart from './ShoppingCart';
+import imgitalian from '../img/italian.png';
 
 const foodItems = [
   {
@@ -8,53 +9,53 @@ const foodItems = [
     "description": "Two beef patties, two slices of American cheese, lettuce, tomato, and spread on a bun.",
     "price": 3.99,
     "calories": 670,
-    "image": "double_double.jpg"
+    "image": imgitalian
   },
   {
     "name": "Cheeseburger",
     "description": "A single beef patty, a slice of American cheese, lettuce, tomato, and spread on a bun.",
     "price": 2.45,
     "calories": 480,
-    "image": "cheeseburger.jpg"
+    "image": imgitalian
   },
   {
     "name": "Hamburger",
     "description": "A single beef patty, lettuce, tomato, and spread on a bun.",
     "price": 2.10,
     "calories": 390,
-    "image": "hamburger.jpg"
+    "image": imgitalian
   },
   {
     "name": "Animal-Style Fries",
     "description": "French fries topped with melted cheese, spread, and grilled onions.",
     "price": 3.99,
     "calories": 750,
-    "image": "animal_style_fries.jpg"
+    "image": imgitalian
   },
   {
     "name": "Milkshake",
     "description": "A classic milkshake in flavors like chocolate, strawberry, and vanilla.",
     "price": 2.15,
     "calories": 590,
-    "image": "milkshake.jpg"
+    "image": imgitalian
   },
   {
     "name": "Soft Drink",
     "price": 1.65,
     "calories": 0,
-    "image": "soft_drink.jpg"
+    "image": imgitalian
   },
   {
     "name": "Lemonade",
     "price": 1.65,
     "calories": 200,
-    "image": "lemonade.jpg"
+    "image": imgitalian
   },
   {
     "name": "Iced Tea",
     "price": 1.65,
     "calories": 0,
-    "image": "iced_tea.jpg"
+    "image": imgitalian
   }
 ];
 
