@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import './App.css';
 import './Components/index.css';
 import Header from './Components/Header';
-import Footer from './Components/Footer';
+//import Footer from './Components/Footer';
 import FoodCategoryList from './Components/FoodCategoryList';
 import McDonalds from './Components/McDonalds';
 import BurgerKing from './Components/BurgerKing';
@@ -18,15 +18,15 @@ import OliveGarden from './Components/OliveGarden';
 import TGIFridays from './Components/TGIFridays';
 import Checkout from './Components/Checkout';
 import LoginForm from './Components/LoginForm';
-import ForgotPassword from './Components/ForgotPassword';
-import CreateAccount from './Components/CreateAccount';
+//import ForgotPassword from './Components/ForgotPassword';
+//import CreateAccount from './Components/CreateAccount';
 import Confirmation from './Components/Confirmation';
-import AccountCreation from './Components/AccountCreation';
-import RewardsTracking from './Components/RewardsTracking';
-import AddDriverForm from './Components/addDriverForm';
-import DriverPortal from './Components/DriverPortal';
-import RestaurantPortal from './Components/RestaurantPortal';
-import DashPass from './Components/dashpass';
+//import AccountCreation from './Components/AccountCreation';
+//import RewardsTracking from './Components/RewardsTracking';
+//import AddDriverForm from './Components/addDriverForm';
+//import DriverPortal from './Components/DriverPortal';
+//import RestaurantPortal from './Components/RestaurantPortal';
+//import DashPass from './Components/dashpass';
 import VerticalNavbar from './Components/VerticalNavbar';
 
 
