@@ -69,7 +69,7 @@ function App() {
 
 export default App;
 
-{/* <InAndOut />
+/*{/* <InAndOut />
 <Chipotle />
 <Subway />
 <PaneraBread />
@@ -86,4 +86,4 @@ export default App;
 <Footer />
 <DriverPortal />
 <RestaurantPortal />
-<DashPass /> */}
+<DashPass /> }*/
