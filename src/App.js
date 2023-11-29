@@ -28,6 +28,7 @@ import Confirmation from './Components/Confirmation';
 //import RestaurantPortal from './Components/RestaurantPortal';
 //import DashPass from './Components/dashpass';
 import VerticalNavbar from './Components/VerticalNavbar';
+import DriverPortal from './Components/DriverPortal';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         <Route path="checkout" element={ <Checkout/> } />
         <Route path="confirmation" element={ <Confirmation/> } />
         <Route path="login" element={ <LoginForm/> } />
+        <Route path="driver-portal" element={ <DriverPortal />}/>
       </Routes>
       <VerticalNavbar />
       <div className="home-page">
