@@ -34,6 +34,7 @@ import DairyQueen from './Components/DairyQueen';
 import Dennys from './Components/Dennys';
 import BuffaloWildWings from './Components/BuffaloWildWings';
 import RegistrationForm from './Components/RegistrationForm';
+import OrderHistory from './Components/OrderHistory';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -69,6 +70,7 @@ function App() {
         <Route path="kfc" element={<KFC/>}/>
         <Route path='taco-bell' element={<TacoBell/>}/>
         <Route path='registration' element={<RegistrationForm/>}/>
+        <Route path='order-history' element={<OrderHistory/>}/>
       </Routes>
       <VerticalNavbar />
       <RestaurantCard />
