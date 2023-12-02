@@ -19,9 +19,7 @@ import TGIFridays from './Components/TGIFridays';
 import Checkout from './Components/Checkout';
 import LoginForm from './Components/LoginForm';
 //import ForgotPassword from './Components/ForgotPassword';
-//import CreateAccount from './Components/CreateAccount';
 import Confirmation from './Components/Confirmation';
-//import AccountCreation from './Components/AccountCreation';
 //import RewardsTracking from './Components/RewardsTracking';
 //import AddDriverForm from './Components/addDriverForm';
 //import DriverPortal from './Components/DriverPortal';
@@ -35,6 +33,7 @@ import TacoBell from './Components/TacoBell';
 import DairyQueen from './Components/DairyQueen';
 import Dennys from './Components/Dennys';
 import BuffaloWildWings from './Components/BuffaloWildWings';
+import RegistrationForm from './Components/RegistrationForm';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -68,6 +67,7 @@ function App() {
         <Route path="ihop" element={<IHOP/>}/>
         <Route path="kfc" element={<KFC/>}/>
         <Route path='taco-bell' element={<TacoBell/>}/>
+        <Route path='registration' element={<RegistrationForm/>}/>
       </Routes>
       <VerticalNavbar />
       <div className="home-page">
@@ -92,8 +92,6 @@ export default App;
 <Confirmation />
 <LoginForm />
 <ForgotPassword />
-<AccountCreation />
-<CreateAccount />
 <RewardsTracking />
 <AddDriverForm />
 <Footer />
