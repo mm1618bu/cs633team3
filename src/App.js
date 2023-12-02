@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import './Components/index.css';
 import Header from './Components/Header';
@@ -29,7 +29,12 @@ import Confirmation from './Components/Confirmation';
 //import DashPass from './Components/dashpass';
 import VerticalNavbar from './Components/VerticalNavbar';
 import DriverPortal from './Components/DriverPortal';
-
+import IHOP from './Components/ihop';
+import KFC from './Components/KFC';
+import TacoBell from './Components/TacoBell';
+import DairyQueen from './Components/DairyQueen';
+import Dennys from './Components/Dennys';
+import BuffaloWildWings from './Components/BuffaloWildWings';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -57,6 +62,12 @@ function App() {
         <Route path="confirmation" element={ <Confirmation/> } />
         <Route path="login" element={ <LoginForm/> } />
         <Route path="driver-portal" element={ <DriverPortal />}/>
+        <Route path="buffalo-wild-wings" element={ <BuffaloWildWings/> }/>
+        <Route path="dairy-queen" element={<DairyQueen/>}/>
+        <Route path="dennys" element={<Dennys/>}/>
+        <Route path="ihop" element={<IHOP/>}/>
+        <Route path="kfc" element={<KFC/>}/>
+        <Route path='taco-bell' element={<TacoBell/>}/>
       </Routes>
       <VerticalNavbar />
       <div className="home-page">

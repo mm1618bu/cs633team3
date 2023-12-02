@@ -99,4 +99,4 @@ const McDonalds = () => {
   );
 };
 
-export default McDonalds;
+export default OrderPage;
