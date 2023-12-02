@@ -4,20 +4,21 @@ const ShoppingCart = ({ cartItems }) => {
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
-  
+
   return (
     <div className="shopping-cart">
       <h2>Shopping Cart</h2>
-      <br></br>
+      <br />
       <h3>My items</h3>
-      <ol>
+      <ul>
         {cartItems.map((item, index) => (
           <li key={index}>
-            {item.quantity} {item.name} - ${item.price}
+            {item.quantity} {item.name} - ${item.price.toFixed(2)} each
           </li>
         ))}
-      </ol>
-      <p>Total: ${calculateTotalPrice()}</p>
+      </ul>
+      <p>Total: ${calculateTotalPrice().toFixed(2)}</p>
+      <button>Checkout</button>
     </div>
   );
 };

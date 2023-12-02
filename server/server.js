@@ -1,59 +1,66 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
 const app = express();
-const port = 3001;
+const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb+srv://administrator:developer@fooder.eduq39h.mongodb.net', { useNewUrlParser: true });
+// Enable CORS
+app.use(cors());
+app.use(express.json());
 
-const exampleSchema = new mongoose.Schema({
-    title: String,
-    description: String,
-    _id: String,
-    rating: String,
-    deliveryTime: String,
-    cuisine: String
-  });
-  
-  const Example = mongoose.model('Example', exampleSchema);
-  
-  app.use(express.json()); // Enable JSON parsing for request bodies
-  
-  // Define API routes for CRUD operations
-  
-  // Create an example
-  app.post('/api/examples', async (req, res) => {
-    const { title, description } = req.body;
-    const example = new Example({ title, description });
-    await example.save();
-    res.json(example);
-  });
-  
-  // Read all examples
-  app.get('/api/examples', async (req, res) => {
-    const examples = await Example.find();
-    res.json(examples);
-  });
-  
-  // Read a single example by ID
-  app.get('/api/examples/:id', async (req, res) => {
-    const example = await Example.findById(req.params.id);
-    res.json(example);
-  });
-  
-  // Update an example by ID
-  app.put('/api/examples/:id', async (req, res) => {
-    const { title, description } = req.body;
-    const updatedExample = await Example.findByIdAndUpdate(req.params.id, { title, description }, { new: true });
-    res.json(updatedExample);
-  });
-  
-  // Delete an example by ID
-  app.delete('/api/examples/:id', async (req, res) => {
-    await Example.findByIdAndRemove(req.params.id);
-    res.send('Example deleted');
-  });
-  
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/yourDatabaseName', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+// User Schema
+const userSchema = new mongoose.Schema({
+  username: String,
+  password: String,
+});
+
+// User Model
+const User = mongoose.model('User', userSchema);
+
+// Registration Endpoint
+app.post('/api/register', async (req, res) => {
+  const { username, password } = req.body;
+
+  // Hash the password before saving it
+  const hashedPassword = await bcrypt.hash(password, 10);
+
+  // Save the user to the database
+  const newUser = new User({ username, password: hashedPassword });
+  await newUser.save();
+
+  res.status(201).json({ message: 'User registered successfully' });
+});
+
+// Login Endpoint
+app.post('/api/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  // Find the user in the database
+  const user = await User.findOne({ username });
+
+  // Check if the user exists and the password is correct
+  if (user && (await bcrypt.compare(password, user.password))) {
+    // Generate JWT token
+    const token = jwt.sign({ username: user.username }, 'yourSecretKey', {
+      expiresIn: '1h', // Token expires in 1 hour, adjust as needed
+    });
+
+    res.json({ token });
+  } else {
+    res.status(401).json({ message: 'Invalid username or password' });
+  }
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
