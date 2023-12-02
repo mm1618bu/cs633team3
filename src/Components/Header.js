@@ -1,12 +1,12 @@
 import React from 'react';
-
+import imgfooder from '../img/fooder.png';
 function Header() {
   return (
     <div className="topheader">
       <div className="top-logo-container">
         <img
           className="logo"
-          src="https://cdn.doordash.com/media/channel_icons/brand-mark-square.png"
+          src= {imgfooder}
           alt="DoorDash Logo"
         />
       </div>
