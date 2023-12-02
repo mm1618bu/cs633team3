@@ -3,56 +3,59 @@ import './index.css'; // Import your CSS file
 import ShoppingCart from './ShoppingCart';
 
 const foodItems = [
-    {
-      "name": "Big Mac",
-      "description": "The one and only McDonald's Big Mac.",
-      "price": 4.99,
-      "calories": 550,
-      "image": "big_mac.jpg"
-    },
-    {
-      "name": "Quarter Pounder with Cheese",
-      "price": 3.79,
-      "calories": 520,
-      "image": "quarter_pounder.jpg"
-    },
-    {
-      "name": "McChicken",
-      "price": 2.29,
-      "calories": 350,
-      "image": "mcchicken.jpg"
-    },
-    {
-      "name": "Spicy McChicken",
-      "price": 2.49,
-      "calories": 400,
-      "image": "spicy_mcchicken.jpg"
-    },
-    {
-      "name": "French Fries",
-      "price": 1.89,
-      "calories": 365,
-      "image": "french_fries.jpg"
-    },
-    {
-      "name": "Apple Slices",
-      "price": 1.00,
-      "calories": 35,
-      "image": "apple_slices.jpg"
-    },
-    {
-      "name": "Coca-Cola",
-      "price": 1.69,
-      "calories": 140,
-      "image": "coca_cola.jpg"
-    },
-    {
-      "name": "Diet Coke",
-      "price": 1.69,
-      "calories": 0,
-      "image": "diet_coke.jpg"
-    }
-  ];
+  {
+    name: "Dave's Single",
+    description: "A classic single cheeseburger from Wendy's.",
+    price: 4.19,
+    calories: 570,
+    image: "daves_single.jpg",
+  },
+  {
+    name: "Baconator",
+    description: "Wendy's famous Baconator burger.",
+    price: 6.39,
+    calories: 950,
+    image: "baconator.jpg",
+  },
+  {
+    name: "Spicy Chicken Nuggets",
+    price: 2.99,
+    calories: 190,
+    image: "spicy_chicken_nuggets.jpg",
+  },
+  {
+    name: "Classic Chicken Sandwich",
+    price: 4.99,
+    calories: 490,
+    image: "classic_chicken_sandwich.jpg",
+  },
+  {
+    name: "Natural-Cut Fries",
+    price: 1.89,
+    calories: 420,
+    image: "french_fries.jpg", // Assuming Wendy's fries image
+  },
+  {
+    name: "Apple Pecan Chicken Salad",
+    price: 6.29,
+    calories: 340,
+    image: "apple_pecan_chicken_salad.jpg",
+  },
+  {
+    name: "Frosty",
+    description: "Wendy's classic chocolate or vanilla Frosty.",
+    price: 1.99,
+    calories: 340,
+    image: "frosty.jpg",
+  },
+  {
+    name: "Iced Tea",
+    price: 1.49,
+    calories: 0,
+    image: "iced_tea.jpg",
+  },
+];
+
 const Wendys = () => {
   const [cartItems, setCartItems] = useState([]);
 
