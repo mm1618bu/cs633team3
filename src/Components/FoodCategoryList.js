@@ -1,43 +1,45 @@
 import React from 'react';
+import imgitalian from '../img/italian.png';
+import imgwrap from '../img/wrap.png';
 import './index.css';
 
 const FoodCategoryList = () => {
   const categories = [
     {
         name: 'Fruits',
-        image: '../img/italian.png',
+        image: imgitalian,
       },
       {
         name: 'Vegetables',
-        image: './src/vegetables.jpg',
+        image: imgitalian,
       },
       {
         name: 'Meat',
-        image: './src/meat.jpg',
+        image: imgitalian,
       },
       {
         name: 'Fruits',
-        image: '../img/italian.png',
+        image: imgitalian,
       },
       {
         name: 'Vegetables',
-        image: './src/vegetables.jpg',
+        image: imgitalian,
       },
       {
         name: 'Meat',
-        image: './src/meat.jpg',
+        image: imgwrap,
       },
       {
         name: 'Fruits',
-        image: '../img/italian.png',
+        image: imgwrap,
       },
       {
         name: 'Vegetables',
-        image: './src/vegetables.jpg',
+        image: imgwrap,
       },
       {
         name: 'Meat',
-        image: './src/meat.jpg',
+        image: imgwrap,
       },
     // Add more categories and images as needed
   ];

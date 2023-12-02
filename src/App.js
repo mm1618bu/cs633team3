@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from "react-router-dom"
 import './App.css';
 import './Components/index.css';
 import Header from './Components/Header';
@@ -41,27 +42,20 @@ function App() {
     <div className="App">
       <Header />
       <FoodCategoryList />
-      <McDonalds />
-      <BurgerKing />
-      <Wendys />
-      <InAndOut />
-      <Chipotle />
-      <Subway />
-      <PaneraBread />
-      <OliveGarden />
-      <TGIFridays />
-      <Checkout />
-      <Confirmation />
-      <LoginForm />
-      <ForgotPassword />
-      <AccountCreation />
-      <CreateAccount />
-      <RewardsTracking />
-      <AddDriverForm />
-      <Footer />
-      <DriverPortal />
-      <RestaurantPortal />
-      <DashPass />
+      <Routes>
+        <Route path="/" element={ <McDonalds/> } />
+        <Route path="burger-king" element={ <BurgerKing/> } />
+        <Route path="wendys" element={ <Wendys/> } />
+        <Route path="in-and-out" element={ <InAndOut/> } />
+        <Route path="chipotle" element={ <Chipotle/> } />
+        <Route path="subway" element={ <Subway/> } />
+        <Route path="panera-bread" element={ <PaneraBread/> } />
+        <Route path="olive-garden" element={ <OliveGarden/> } />
+        <Route path="tgi-fridays" element={ <TGIFridays/> } />
+        <Route path="checkout" element={ <Checkout/> } />
+        <Route path="confirmation" element={ <Confirmation/> } />
+        <Route path="login" element={ <LoginForm/> } />
+      </Routes>
       <VerticalNavbar />
       <div className="home-page">
         {restaurants.map((restaurant, index) => (
@@ -74,3 +68,22 @@ function App() {
 }
 
 export default App;
+
+{/* <InAndOut />
+<Chipotle />
+<Subway />
+<PaneraBread />
+<OliveGarden />
+<TGIFridays />
+<Checkout />
+<Confirmation />
+<LoginForm />
+<ForgotPassword />
+<AccountCreation />
+<CreateAccount />
+<RewardsTracking />
+<AddDriverForm />
+<Footer />
+<DriverPortal />
+<RestaurantPortal />
+<DashPass /> */}
