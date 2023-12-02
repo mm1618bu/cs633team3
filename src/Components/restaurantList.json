@@ -5,7 +5,8 @@
       "distance": 4.3,
       "deliveryTime": 43,
       "cuisine": "Somali",
-      "image": "panera_bread.jpg"
+      "image": "panera_bread.jpg",
+      "url": "/panera-bread"
     },
     {
       "name": "Olive Garden",
@@ -13,7 +14,8 @@
       "distance": 3.3,
       "deliveryTime": 24,
       "cuisine": "Italian",
-      "image": "olive_garden.jpg"
+      "image": "olive_garden.jpg",
+      "url": "/olive-garden"
     },
     {
       "name": "TGI Fridays",
@@ -21,7 +23,8 @@
       "distance": 6.1,
       "deliveryTime": 40,
       "cuisine": "American",
-      "image": "tgi_fridays.jpg"
+      "image": "tgi_fridays.jpg",
+      "url": "/tgi-fridays"
     },
     {
       "name": "Pizza Hut",
@@ -29,7 +32,8 @@
       "distance": 7.9,
       "deliveryTime": 53,
       "cuisine": "Pizza",
-      "image": "pizza_hut.jpg"
+      "image": "pizza_hut.jpg",
+      "url": "/pizza-hut"
     },
     {
       "name": "KFC",
@@ -37,7 +41,8 @@
       "distance": 6.2,
       "deliveryTime": 3,
       "cuisine": "Fast Food",
-      "image": "kfc.jpg"
+      "image": "kfc.jpg",
+      "url": "/kfc"
     },
     {
       "name": "IHOP",
@@ -45,7 +50,8 @@
       "distance": 1.6,
       "deliveryTime": 52,
       "cuisine": "American",
-      "image": "ihop.jpg"
+      "image": "ihop.jpg",
+      "url": "/ihop"
     },
     {
       "name": "Denny's",
@@ -53,7 +59,8 @@
       "distance": 4.1,
       "deliveryTime": 46,
       "cuisine": "American",
-      "image": "dennys.jpg"
+      "image": "dennys.jpg",
+      "url": "/dennys"
     },
     {
       "name": "Dairy Queen",
@@ -61,7 +68,8 @@
       "distance": 3.8,
       "deliveryTime": 2,
       "cuisine": "Fast Food",
-      "image": "dairy_queen.jpg"
+      "image": "dairy_queen.jpg",
+      "url": "/dairy-queen"
     },
     {
       "name": "Buffalo Wild Wings",
@@ -69,7 +77,8 @@
       "distance": 4.7,
       "deliveryTime": 21,
       "cuisine": "American",
-      "image": "buffalo_wild_wings.jpg"
+      "image": "buffalo_wild_wings.jpg",
+      "url": "/buffalo-wild-wings"
     },
     {
       "name": "Taco Bell",
@@ -77,7 +86,8 @@
       "distance": 8.6,
       "deliveryTime": 42,
       "cuisine": "Mexican",
-      "image": "taco_bell.jpg"
+      "image": "taco_bell.jpg",
+      "url": "/taco-bell"
     },
     {
       "name": "Red Lobster",
@@ -85,7 +95,8 @@
       "distance": 1.5,
       "deliveryTime": 11,
       "cuisine": "Seafood",
-      "image": "red_lobster.jpg"
+      "image": "red_lobster.jpg",
+      "url": "/red-lobster"
     },
     {
       "name": "McDonald's",
@@ -93,7 +104,8 @@
       "distance": 3.5,
       "deliveryTime": 15,
       "cuisine": "Fast Food",
-      "image": "mcdonalds.jpg"
+      "image": "mcdonalds.jpg",
+      "url": "/mcdonalds"
     },
     {
       "name": "Burger King",
@@ -101,7 +113,8 @@
       "distance": 2.8,
       "deliveryTime": 10,
       "cuisine": "Fast Food",
-      "image": "burger_king.jpg"
+      "image": "burger_king.jpg",
+      "url": "/burger-king"
     },
     {
       "name": "Wendy's",
@@ -109,7 +122,8 @@
       "distance": 4.2,
       "deliveryTime": 20,
       "cuisine": "Fast Food",
-      "image": "wendys.jpg"
+      "image": "wendys.jpg",
+      "url": "/wendys"
     },
     {
       "name": "Chipotle",
@@ -117,7 +131,8 @@
       "distance": 5.1,
       "deliveryTime": 25,
       "cuisine": "Mexican",
-      "image": "chipotle.jpg"
+      "image": "chipotle.jpg",
+      "url": "/chipotle"
     },
     {
       "name": "In-N-Out Burger",
@@ -125,6 +140,7 @@
       "distance": 7.3,
       "deliveryTime": 30,
       "cuisine": "Fast Food",
-      "image": "innout.jpg"
+      "image": "innout.jpg",
+      "url": "/innout"
     }
   ]

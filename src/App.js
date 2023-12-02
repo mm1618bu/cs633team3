@@ -41,6 +41,7 @@ function App() {
   useEffect(() => {
     // Use the JSON data directly
     setRestaurants(restaurantsData);
+    console.log(restaurantsData);
   }, []); // Empty dependency array to ensure the effect runs only once
 
   return (
@@ -70,11 +71,7 @@ function App() {
         <Route path='registration' element={<RegistrationForm/>}/>
       </Routes>
       <VerticalNavbar />
-      <div className="home-page">
-        {restaurants.map((restaurant, index) => (
-          <RestaurantCard key={index} restaurant={restaurant} />
-        ))}
-      </div>
+      <RestaurantCard />
     </div>
     
   );
