@@ -8,7 +8,7 @@ const foodItems = [
       "description": "The one and only McDonald's Big Mac.",
       "price": 4.99,
       "calories": 550,
-      "image": "big_mac.png"
+      "image": "Big_Mac.png"
     },
     {
       "name": "Quarter Pounder with Cheese",
