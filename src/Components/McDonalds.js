@@ -8,49 +8,49 @@ const foodItems = [
       "description": "The one and only McDonald's Big Mac.",
       "price": 4.99,
       "calories": 550,
-      "image": "big_mac.jpg"
+      "image": "big_mac.png"
     },
     {
       "name": "Quarter Pounder with Cheese",
       "price": 3.79,
       "calories": 520,
-      "image": "quarter_pounder.jpg"
+      "image": "Quater_Pounder.png"
     },
     {
       "name": "McChicken",
       "price": 2.29,
       "calories": 350,
-      "image": "mcchicken.jpg"
+      "image": "Chicken_Breast_Meat.jpg"
     },
     {
       "name": "Spicy McChicken",
       "price": 2.49,
       "calories": 400,
-      "image": "spicy_mcchicken.jpg"
+      "image": "Chicken_Breast_Meat.png"
     },
     {
       "name": "French Fries",
       "price": 1.89,
       "calories": 365,
-      "image": "french_fries.jpg"
+      "image": "Fench_Fries.png"
     },
     {
       "name": "Apple Slices",
       "price": 1.00,
       "calories": 35,
-      "image": "apple_slices.jpg"
+      "image": "Apple_Slices.png"
     },
     {
       "name": "Coca-Cola",
       "price": 1.69,
       "calories": 140,
-      "image": "coca_cola.jpg"
+      "image": "Soda.png"
     },
     {
       "name": "Diet Coke",
       "price": 1.69,
       "calories": 0,
-      "image": "diet_coke.jpg"
+      "image": "Soda.png"
     }
   ];
   const McDonalds = () => {
