@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import './Components/index.css';
+import './Components/DashPass.css';
 import Header from './Components/Header';
 //import Footer from './Components/Footer';
 import FoodCategoryList from './Components/FoodCategoryList';
@@ -24,7 +25,7 @@ import Confirmation from './Components/Confirmation';
 //import AddDriverForm from './Components/addDriverForm';
 //import DriverPortal from './Components/DriverPortal';
 //import RestaurantPortal from './Components/RestaurantPortal';
-//import DashPass from './Components/dashpass';
+import DashPass from './Components/DashPass';
 import VerticalNavbar from './Components/VerticalNavbar';
 import DriverPortal from './Components/DriverPortal';
 import IHOP from './Components/ihop';
@@ -71,6 +72,7 @@ function App() {
         <Route path='taco-bell' element={<TacoBell/>}/>
         <Route path='registration' element={<RegistrationForm/>}/>
         <Route path='order-history' element={<OrderHistory/>}/>
+        <Route path='dashpass' element={<DashPass/>}/>
       </Routes>
       <VerticalNavbar />
       <RestaurantCard />

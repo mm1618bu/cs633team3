@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import ShoppingCart from './ShoppingCart';
+import Reviews from './Reviews';
 
 const foodItems = [
     {
@@ -119,6 +120,7 @@ const foodItems = [
           ))}
         </div>
         <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
+        <Reviews />
       </div>
     );
   };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ShoppingCart = ({ cartItems }) => {
   const calculateTotalPrice = () => {
@@ -18,7 +19,9 @@ const ShoppingCart = ({ cartItems }) => {
         ))}
       </ul>
       <p>Total: ${calculateTotalPrice().toFixed(2)}</p>
-      <button>Checkout</button>
+      <button>
+        <Link to="/checkout">Checkout</Link>
+      </button>
     </div>
   );
 };

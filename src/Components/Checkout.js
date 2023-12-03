@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 class Checkout extends Component {
@@ -185,8 +186,10 @@ class Checkout extends Component {
           </div>
         </div>
 
-        <button onClick={this.handleCheckout}>Place Order</button>
-      </div>
+        <button>
+          <Link to="/confirmation">Checkout</Link>
+        </button>
+        </div>
     );
   }
 }

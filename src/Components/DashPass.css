@@ -1,0 +1,1362 @@
+.dashpass-page {
+    background-color: #ffffff;
+    height: 2291px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .dashpass-page .div {
+    height: 103px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .dashpass-page .overlap {
+    height: 104px;
+    position: relative;
+  }
+  
+  .dashpass-page .group {
+    background-color: #ffffff;
+    height: 103px;
+    position: relative;
+  }
+  
+  .dashpass-page .menu {
+    height: 40px;
+    left: 81px;
+    position: absolute;
+    top: 32px;
+    width: 40px;
+  }
+  
+  .dashpass-page .overlap-wrapper {
+    height: 44px;
+    left: 1242px;
+    position: absolute;
+    top: 30px;
+    width: 46px;
+  }
+  
+  .dashpass-page .overlap-group {
+    height: 44px;
+    position: relative;
+    width: 48px;
+  }
+  
+  .dashpass-page .shopping-cart {
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 41px;
+  }
+  
+  .dashpass-page .overlap-group-wrapper {
+    height: 21px;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    width: 23px;
+  }
+  
+  .dashpass-page .div-wrapper {
+    background-color: #036793;
+    border-radius: 50px;
+    height: 21px;
+    position: relative;
+    width: 21px;
+  }
+  
+  .dashpass-page .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 10px;
+    font-weight: 700;
+    height: 10px;
+    left: 7px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    white-space: nowrap;
+    width: 10px;
+  }
+  
+  .dashpass-page .line {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 102px;
+    width: 1440px;
+  }
+  
+  .dashpass-page .group-2 {
+    height: 49px;
+    left: 746px;
+    position: absolute;
+    top: 27px;
+    width: 429px;
+  }
+  
+  .dashpass-page .overlap-2 {
+    background-size: 100% 100%;
+    height: 49px;
+    position: relative;
+    width: 427px;
+  }
+  
+  .dashpass-page .search {
+    height: 25px;
+    left: 17px;
+    position: absolute;
+    top: 12px;
+    width: 42px;
+  }
+  
+  .dashpass-page .text-wrapper-2 {
+    color: #6b6b6b;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 23px;
+    left: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 258px;
+  }
+  
+  .dashpass-page .FOODER-LOGO {
+    height: 48px;
+    left: 174px;
+    object-fit: cover;
+    position: absolute;
+    top: 28px;
+    width: 196px;
+  }
+  
+  .dashpass-page .overlap-3 {
+    height: 699px;
+    left: 0;
+    position: absolute;
+    top: 1175px;
+    width: 1440px;
+  }
+  
+  .dashpass-page .group-wrapper {
+    background-color: #f7f7f7;
+    height: 699px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .dashpass-page .group-3 {
+    height: 574px;
+    left: 279px;
+    position: relative;
+    top: 52px;
+    width: 887px;
+  }
+  
+  .dashpass-page .text-wrapper-3 {
+    color: #191919;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    height: 54px;
+    left: 279px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dashpass-page .group-4 {
+    height: 178px;
+    left: 0;
+    position: absolute;
+    top: 104px;
+    width: 883px;
+  }
+  
+  .dashpass-page .group-5 {
+    height: 178px;
+    left: 302px;
+    position: absolute;
+    top: 0;
+    width: 281px;
+  }
+  
+  .dashpass-page .overlap-4 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #191919;
+    border-radius: 10px;
+    height: 178px;
+    position: relative;
+    width: 279px;
+  }
+  
+  .dashpass-page .p {
+    color: #191919;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 61px;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 49px;
+    width: 229px;
+  }
+  
+  .dashpass-page .span {
+    font-weight: 700;
+  }
+  
+  .dashpass-page .text-wrapper-4 {
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .dashpass-page .group-6 {
+    height: 36px;
+    left: 23px;
+    position: absolute;
+    top: 121px;
+    width: 100px;
+  }
+  
+  .dashpass-page .overlap-group-2 {
+    height: 36px;
+    position: relative;
+    width: 98px;
+  }
+  
+  .dashpass-page .rectangle {
+    background-color: #02872f;
+    border-radius: 5px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 98px;
+  }
+  
+  .dashpass-page .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 76px;
+  }
+  
+  .dashpass-page .group-7 {
+    height: 27px;
+    left: 23px;
+    position: absolute;
+    top: 14px;
+    width: 231px;
+  }
+  
+  .dashpass-page .text-wrapper-6 {
+    color: #191919;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 27px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dashpass-page .img {
+    height: 22px;
+    left: 207px;
+    position: absolute;
+    top: 3px;
+    width: 22px;
+  }
+  
+  .dashpass-page .group-8 {
+    height: 178px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 281px;
+  }
+  
+  .dashpass-page .overlap-5 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #e7e7e7;
+    border-radius: 10px;
+    height: 178px;
+    position: relative;
+    width: 279px;
+  }
+  
+  .dashpass-page .group-9 {
+    height: 178px;
+    left: 604px;
+    position: absolute;
+    top: 0;
+    width: 281px;
+  }
+  
+  .dashpass-page .text-wrapper-7 {
+    color: #191919;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    height: 46px;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 56px;
+    width: 229px;
+  }
+  
+  .dashpass-page .group-10 {
+    height: 36px;
+    left: 23px;
+    position: absolute;
+    top: 119px;
+    width: 118px;
+  }
+  
+  .dashpass-page .overlap-group-3 {
+    height: 36px;
+    position: relative;
+    width: 116px;
+  }
+  
+  .dashpass-page .rectangle-2 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    border-radius: 5px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 116px;
+  }
+  
+  .dashpass-page .text-wrapper-8 {
+    color: #509fa3;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    left: 7px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 103px;
+  }
+  
+  .dashpass-page .by-tapping-the {
+    color: transparent;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    height: 42px;
+    left: 0;
+    letter-spacing: 0.42px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 454px;
+    width: 883px;
+  }
+  
+  .dashpass-page .text-wrapper-9 {
+    color: #767676;
+  }
+  
+  .dashpass-page .text-wrapper-10 {
+    color: #191919;
+    text-decoration: underline;
+  }
+  
+  .dashpass-page .text-wrapper-11 {
+    color: #191919;
+  }
+  
+  .dashpass-page .group-11 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 102px;
+    left: 0;
+    position: absolute;
+    top: 323px;
+    width: 883px;
+  }
+  
+  .dashpass-page .group-12 {
+    height: 59px;
+    left: 147px;
+    position: absolute;
+    top: 515px;
+    width: 590px;
+  }
+  
+  .dashpass-page .overlap-6 {
+    background-color: #036793;
+    border-radius: 50px;
+    height: 59px;
+    position: relative;
+    width: 588px;
+  }
+  
+  .dashpass-page .text-wrapper-12 {
+    color: #ffffff;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 22px;
+    font-weight: 600;
+    height: 33px;
+    left: 96px;
+    letter-spacing: 0.66px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+  }
+  
+  .dashpass-page .group-13 {
+    height: 46px;
+    left: 306px;
+    position: absolute;
+    top: 403px;
+    width: 830px;
+  }
+  
+  .dashpass-page .group-14 {
+    height: 30px;
+    left: 62px;
+    position: absolute;
+    top: 8px;
+    width: 770px;
+  }
+  
+  .dashpass-page .text-wrapper-13 {
+    color: #000000;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dashpass-page .chevron-right {
+    height: 28px;
+    left: 740px;
+    position: absolute;
+    top: 1px;
+    width: 28px;
+  }
+  
+  .dashpass-page .magnetic-card {
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 46px;
+  }
+  
+  .dashpass-page .footer {
+    background-color: transparent;
+    height: 417px;
+    left: 0;
+    position: absolute;
+    top: 1874px;
+    width: 1440px;
+  }
+  
+  .dashpass-page .group-15 {
+    height: 179px;
+    left: 569px;
+    position: absolute;
+    top: 33px;
+    width: 301px;
+  }
+  
+  .dashpass-page .text-wrapper-14 {
+    color: #272727;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 41px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 193px;
+  }
+  
+  .dashpass-page .text-wrapper-15 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 60px;
+    width: 193px;
+  }
+  
+  .dashpass-page .overlap-group-4 {
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: 90px;
+    width: 291px;
+  }
+  
+  .dashpass-page .text-wrapper-16 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 193px;
+  }
+  
+  .dashpass-page .text-wrapper-17 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 29px;
+    width: 291px;
+  }
+  
+  .dashpass-page .text-wrapper-18 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 149px;
+    width: 264px;
+  }
+  
+  .dashpass-page .group-16 {
+    height: 33px;
+    left: 151px;
+    position: absolute;
+    top: 373px;
+    width: 790px;
+  }
+  
+  .dashpass-page .overlap-7 {
+    height: 33px;
+    position: relative;
+    width: 780px;
+  }
+  
+  .dashpass-page .text-wrapper-19 {
+    color: #767676;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 33px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 181px;
+  }
+  
+  .dashpass-page .text-wrapper-20 {
+    color: #767676;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 33px;
+    left: 405px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 208px;
+  }
+  
+  .dashpass-page .text-wrapper-21 {
+    color: #767676;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 33px;
+    left: 153px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 114px;
+  }
+  
+  .dashpass-page .text-wrapper-22 {
+    color: #767676;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 33px;
+    left: 579px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 201px;
+  }
+  
+  .dashpass-page .text-wrapper-23 {
+    color: #767676;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 33px;
+    left: 236px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 201px;
+  }
+  
+  .dashpass-page .group-17 {
+    height: 54px;
+    left: 1159px;
+    position: absolute;
+    top: 363px;
+    width: 155px;
+  }
+  
+  .dashpass-page .instagram {
+    height: 54px;
+    left: 119px;
+    position: absolute;
+    top: 0;
+    width: 36px;
+  }
+  
+  .dashpass-page .twitter {
+    height: 54px;
+    left: 59px;
+    position: absolute;
+    top: 0;
+    width: 36px;
+  }
+  
+  .dashpass-page .facebook {
+    height: 54px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 36px;
+  }
+  
+  .dashpass-page .overlap-8 {
+    height: 268px;
+    left: 164px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+  }
+  
+  .dashpass-page .group-18 {
+    height: 268px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 208px;
+  }
+  
+  .dashpass-page .text-wrapper-24 {
+    color: #272727;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 41px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 192px;
+  }
+  
+  .dashpass-page .text-wrapper-25 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 60px;
+    width: 112px;
+  }
+  
+  .dashpass-page .overlap-9 {
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: 90px;
+    width: 127px;
+  }
+  
+  .dashpass-page .text-wrapper-26 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 88px;
+  }
+  
+  .dashpass-page .text-wrapper-27 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 29px;
+    width: 127px;
+  }
+  
+  .dashpass-page .text-wrapper-28 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 238px;
+    width: 112px;
+  }
+  
+  .dashpass-page .overlap-10 {
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: 149px;
+    width: 166px;
+  }
+  
+  .dashpass-page .text-wrapper-29 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 112px;
+  }
+  
+  .dashpass-page .text-wrapper-30 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 29px;
+    width: 166px;
+  }
+  
+  .dashpass-page .text-wrapper-31 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 208px;
+    width: 142px;
+  }
+  
+  .dashpass-page .group-19 {
+    height: 149px;
+    left: 200px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .dashpass-page .text-wrapper-32 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 60px;
+    width: 177px;
+  }
+  
+  .dashpass-page .overlap-11 {
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: 90px;
+    width: 153px;
+  }
+  
+  .dashpass-page .text-wrapper-33 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 153px;
+  }
+  
+  .dashpass-page .text-wrapper-34 {
+    color: #868686;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 29px;
+    width: 64px;
+  }
+  
+  .dashpass-page .line-2 {
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .dashpass-page .image {
+    height: 54px;
+    left: 77px;
+    object-fit: cover;
+    position: absolute;
+    top: 363px;
+    width: 64px;
+  }
+  
+  .dashpass-page .overlap-12 {
+    height: 1046px;
+    left: 0;
+    position: absolute;
+    top: 129px;
+    width: 1874px;
+  }
+  
+  .dashpass-page .group-20 {
+    height: 1046px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1874px;
+  }
+  
+  .dashpass-page .overlap-13 {
+    height: 1046px;
+    position: relative;
+  }
+  
+  .dashpass-page .group-21 {
+    height: 219px;
+    left: 148px;
+    position: absolute;
+    top: 28px;
+    width: 646px;
+  }
+  
+  .dashpass-page .text-wrapper-35 {
+    color: #191919;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 38px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 1.14px;
+    line-height: 50px;
+    position: absolute;
+    top: 69px;
+    width: 642px;
+  }
+  
+  .dashpass-page .text-wrapper-36 {
+    color: #767676;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    position: absolute;
+    top: 195px;
+  }
+  
+  .dashpass-page .group-22 {
+    height: 57px;
+    left: 65px;
+    position: absolute;
+    top: 0;
+    width: 236px;
+  }
+  
+  .dashpass-page .text-wrapper-37 {
+    color: #000000;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 38px;
+    font-weight: 600;
+    height: 57px;
+    left: 0;
+    letter-spacing: 1.14px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dashpass-page .overlap-group-5 {
+    background-size: 100% 100%;
+    height: 1046px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .dashpass-page .overlap-14 {
+    height: 358px;
+    left: 762px;
+    position: absolute;
+    top: 155px;
+    width: 678px;
+  }
+  
+  .dashpass-page .food {
+    height: 160px;
+    left: 416px;
+    position: absolute;
+    top: 0;
+    width: 262px;
+  }
+  
+  .dashpass-page .overlap-15 {
+    height: 248px;
+    left: 0;
+    position: absolute;
+    top: 110px;
+    width: 588px;
+  }
+  
+  .dashpass-page .a-set-of-sushi-rolls {
+    height: 198px;
+    left: 304px;
+    position: absolute;
+    top: 50px;
+    width: 284px;
+  }
+  
+  .dashpass-page .food-2 {
+    height: 168px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 316px;
+  }
+  
+  .dashpass-page .food-3 {
+    height: 155px;
+    left: 957px;
+    position: absolute;
+    top: 107px;
+    width: 219px;
+  }
+  
+  .dashpass-page .group-23 {
+    height: 553px;
+    left: 148px;
+    position: absolute;
+    top: 446px;
+    width: 1146px;
+  }
+  
+  .dashpass-page .text-wrapper-38 {
+    color: #000000;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0.72px;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dashpass-page .group-24 {
+    height: 408px;
+    left: 0;
+    position: absolute;
+    top: 76px;
+    width: 1144px;
+  }
+  
+  .dashpass-page .group-25 {
+    height: 189px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 364px;
+  }
+  
+  .dashpass-page .overlap-group-6 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 189px;
+    position: relative;
+    width: 362px;
+  }
+  
+  .dashpass-page .text-wrapper-39 {
+    color: #191919;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 22px;
+    font-weight: 500;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 69px;
+    width: 322px;
+  }
+  
+  .dashpass-page .group-26 {
+    height: 35px;
+    left: 19px;
+    position: absolute;
+    top: 13px;
+    width: 299px;
+  }
+  
+  .dashpass-page .group-27 {
+    height: 43px;
+    left: -4px;
+    position: absolute;
+    top: 0;
+    width: 43px;
+  }
+  
+  .dashpass-page .text-wrapper-40 {
+    color: #028389;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    height: 29px;
+    left: 46px;
+    letter-spacing: 0.16px;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+    width: 251px;
+  }
+  
+  .dashpass-page .group-28 {
+    height: 189px;
+    left: 391px;
+    position: absolute;
+    top: 0;
+    width: 364px;
+  }
+  
+  .dashpass-page .text-wrapper-41 {
+    color: #191919;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 22px;
+    font-weight: 500;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 69px;
+    width: 322px;
+  }
+  
+  .dashpass-page .group-29 {
+    height: 35px;
+    left: 21px;
+    position: absolute;
+    top: 13px;
+    width: 107px;
+  }
+  
+  .dashpass-page .img-wrapper {
+    background-color: #ecfbfb;
+    border-radius: 17.5px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 35px;
+  }
+  
+  .dashpass-page .take-away-food {
+    height: 27px;
+    left: 4px;
+    position: absolute;
+    top: 6px;
+    width: 27px;
+  }
+  
+  .dashpass-page .text-wrapper-42 {
+    color: #028389;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    height: 24px;
+    left: 46px;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+  }
+  
+  .dashpass-page .group-30 {
+    height: 189px;
+    left: 782px;
+    position: absolute;
+    top: 0;
+    width: 364px;
+  }
+  
+  .dashpass-page .group-31 {
+    height: 35px;
+    left: 21px;
+    position: absolute;
+    top: 13px;
+    width: 182px;
+  }
+  
+  .dashpass-page .vegetarian-food {
+    height: 27px;
+    left: 2px;
+    position: absolute;
+    top: 6px;
+    width: 27px;
+  }
+  
+  .dashpass-page .group-32 {
+    height: 189px;
+    left: 782px;
+    position: absolute;
+    top: 219px;
+    width: 362px;
+  }
+  
+  .dashpass-page .overlap-16 {
+    height: 189px;
+    position: relative;
+    width: 364px;
+  }
+  
+  .dashpass-page .group-33 {
+    height: 35px;
+    left: 21px;
+    position: absolute;
+    top: 13px;
+    width: 187px;
+  }
+  
+  .dashpass-page .vector {
+    height: 21px;
+    left: 10px;
+    position: absolute;
+    top: 14px;
+    width: 22px;
+  }
+  
+  .dashpass-page .text-wrapper-43 {
+    color: #028389;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    height: 24px;
+    left: 46px;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+  }
+  
+  .dashpass-page .group-34 {
+    height: 189px;
+    left: 391px;
+    position: absolute;
+    top: 219px;
+    width: 362px;
+  }
+  
+  .dashpass-page .group-35 {
+    height: 35px;
+    left: 21px;
+    position: absolute;
+    top: 13px;
+    width: 170px;
+  }
+  
+  .dashpass-page .house-fill {
+    height: 25px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 25px;
+  }
+  
+  .dashpass-page .group-36 {
+    height: 189px;
+    left: 0;
+    position: absolute;
+    top: 219px;
+    width: 362px;
+  }
+  
+  .dashpass-page .group-37 {
+    height: 35px;
+    left: 19px;
+    position: absolute;
+    top: 13px;
+    width: 186px;
+  }
+  
+  .dashpass-page .vector-2 {
+    height: 21px;
+    left: 11px;
+    position: absolute;
+    top: 13px;
+    width: 21px;
+  }
+  
+  .dashpass-page .group-38 {
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 532px;
+    width: 282px;
+  }
+  
+  .dashpass-page .text-wrapper-44 {
+    color: #191919;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    height: 21px;
+    left: 0;
+    letter-spacing: 0.42px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .dashpass-page .vector-3 {
+    height: 15px;
+    left: 265px;
+    position: absolute;
+    top: 3px;
+    width: 15px;
+  }
+  
+  .dashpass-page .image-2 {
+    height: 40px;
+    left: 158px;
+    object-fit: cover;
+    position: absolute;
+    top: 37px;
+    width: 44px;
+  }
+  
