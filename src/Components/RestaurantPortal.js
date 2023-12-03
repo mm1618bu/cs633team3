@@ -75,28 +75,24 @@ const RestaurantPortal = () => {
     }
   ]);
 
-  // Function to accept an order
   const acceptOrder = (order) => {
     setOrders((prevOrders) => {
       return prevOrders.map((o) => (o.id === order.id ? { ...o, status: 'Accepted' } : o));
     });
   };
 
-  // Function to mark an order as completed
   const completeOrder = (order) => {
     setOrders((prevOrders) => {
       return prevOrders.map((o) => (o.id === order.id ? { ...o, status: 'Completed' } : o));
     });
   };
 
-  // Function to mark an order as picked up by the driver
   const markPickedUp = (order) => {
     setOrders((prevOrders) => {
       return prevOrders.map((o) => (o.id === order.id ? { ...o, status: 'Picked Up' } : o));
     });
   };
 
-  // Function to stock out of an item
   const stockOutItem = (order, item) => {
     setOrders((prevOrders) => {
       return prevOrders.map((o) => {
@@ -113,20 +109,18 @@ const RestaurantPortal = () => {
   const newPriceInputRef = useRef(null);
 
   const handlePriceChange = (order) => {
-    setNewPrice(null); // Clear any previous input value
-    newPriceInputRef.current.value = order.total; // Set the input value to the current order's total
-    setNewPrice(order.total); // Set the state with the current order's total
+    setNewPrice(null); 
+    newPriceInputRef.current.value = order.total; 
+    setNewPrice(order.total); 
   };
 
   const handleChangePrice = (order) => {
-    // Prompt the user for a new price
     handlePriceChange(order);
   };
 
   const handleConfirmPriceChange = (order) => {
-    // Update the price with the new value
-    changePrice(order, parseFloat(newPrice)); // Parse the input as a float
-    setNewPrice(null); // Clear the input and state
+    changePrice(order, parseFloat(newPrice)); 
+    setNewPrice(null);
   };
 
   const changePrice = (order, newPrice) => {

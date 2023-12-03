@@ -5,13 +5,10 @@ const RewardsTracking = () => {
   const [rewards, setRewards] = useState([]);
   const [timeUntilNextReward, setTimeUntilNextReward] = useState(null);
 
-  // Simulate fetching rewards data from an API
   useEffect(() => {
-    // Replace this with actual API fetch logic
     const fetchRewardsData = async () => {
       try {
-        // Fetch the customer's rewards data
-        const response = await fetch('/api/rewards'); // Replace with your actual API endpoint
+        const response = await fetch('/api/rewards');
         const data = await response.json();
         setRewards(data.rewards);
         setTimeUntilNextReward(data.timeUntilNextReward);

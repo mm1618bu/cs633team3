@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css'; // Import your CSS file
+import './index.css'; 
 import ShoppingCart from './ShoppingCart';
 
 const foodItems = [
@@ -62,14 +62,11 @@ const OliveGarden = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
-    // Check if the item is already in the cart
     const itemIndex = cartItems.findIndex((cartItem) => cartItem.name === item.name);
 
     if (itemIndex === -1) {
-      // Item is not in the cart, so add it with a quantity of 1
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
     } else {
-      // Item is already in the cart, so update its quantity
       const updatedCartItems = [...cartItems];
       updatedCartItems[itemIndex].quantity += 1;
       setCartItems(updatedCartItems);

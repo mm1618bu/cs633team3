@@ -19,8 +19,6 @@ function DashPass() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can send the registration data to your server for processing here
-    // This is just a basic example
     console.log('Registration Data:', formData);
   };
 

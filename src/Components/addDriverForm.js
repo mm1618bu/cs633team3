@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'; // You'll need to install this library
+import axios from 'axios';
 
 class AddDriverForm extends Component {
   constructor(props) {
@@ -25,15 +25,13 @@ class AddDriverForm extends Component {
       vehicle: this.state.vehicle,
     };
 
-    // Replace 'YOUR_API_ENDPOINT' with the actual endpoint to add a new driver
+
     axios.post('YOUR_API_ENDPOINT', newDriver)
       .then((response) => {
         console.log('Driver added:', response.data);
-        // You can add code to handle success (e.g., show a success message)
       })
       .catch((error) => {
         console.error('Error adding driver:', error);
-        // You can add code to handle errors (e.g., show an error message)
       });
   }
 

@@ -1,6 +1,5 @@
-// Confirmation.js
 import React from 'react';
-import './index.css'; // Import the CSS file
+import './index.css';
 
 const Confirmation = () => {
   const order = {

@@ -1,5 +1,3 @@
-// Checkout.js
-
 import React, { Component } from 'react';
 import './index.css';
 
@@ -13,17 +11,16 @@ class Checkout extends Component {
         email: '',
         phone: '',
       },
-      deliveryOption: 'pickup', // Default to pickup
-      deliveryType: 'normal', // Default to normal
+      deliveryOption: 'pickup', 
+      deliveryType: 'normal', 
       deliveryAddress: '',
       dropOffLocation: '',
-      subtotal: 0, // Assuming you'll calculate the subtotal somewhere
-      deliveryFee: 5, // Example delivery fee
+      subtotal: 0, 
+      deliveryFee: 5, 
       tip: 0,
     };
   }
 
-  // Functions to handle form input changes
   handleAccountDetailsChange = (e) => {
     this.setState({
       accountDetails: {
@@ -57,23 +54,20 @@ class Checkout extends Component {
     });
   };
 
-  // Function to handle tip change
+
   handleTipChange = (e) => {
     this.setState({
       tip: parseFloat(e.target.value) || 0,
     });
   };
 
-  // Function to handle tip selection
   handleTipOption = (amount) => {
     this.setState({
       tip: amount,
     });
   };
 
-  // Function to handle checkout
   handleCheckout = () => {
-    // Calculate total by adding subtotal, delivery fee, and tip
     const total = this.state.subtotal + this.state.deliveryFee + this.state.tip;
 
     console.log('Checkout clicked. Data to submit:', {

@@ -1,10 +1,7 @@
-// Reviews.js
-
 import React from 'react';
 import './index.css';
 
 const Reviews = () => {
-  // Mock data for reviews
   const reviewsData = [
     {
       id: 1,
@@ -18,7 +15,6 @@ const Reviews = () => {
       rating: 5,
       comment: 'Excellent service and delicious meals!',
     },
-    // Add more reviews as needed
   ];
 
   return (

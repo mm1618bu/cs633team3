@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css'; // Import your CSS file
+import './index.css';
 import ShoppingCart from './ShoppingCart';
 
 const ihopFoodItems = [

@@ -9,19 +9,18 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      // Make a POST request to the login endpoint
       const response = await axios.post('http://localhost:5000/api/login', {
         username,
         password,
       });
 
-      // Extract the token from the response
+
       const token = response.data.token;
 
-      // Store the token in localStorage (or secure cookie)
+
       localStorage.setItem('token', token);
 
-      // Authentication successful
+
       alert('Login successful!');
     } catch (error) {
       // Authentication failed

@@ -91,21 +91,19 @@ const DriverPortal = () => {
           "tip": 3.75
         }
       ]
-      
-    // Add more available orders here
   );
 
   const [pickedUpOrders, setPickedUpOrders] = useState([]);
   const [completedOrders, setCompletedOrders] = useState([]);
   const [deniedOrders, setDeniedOrders] = useState([]);
 
-  // Function to move an order to the "Picked Up" tab
+
   const pickUpOrder = (order) => {
     setAvailableOrders(availableOrders.filter((o) => o.id !== order.id));
     setPickedUpOrders([...pickedUpOrders, order]);
   };
 
-  // Function to move a picked up order to the "Completed" tab
+
   const completeOrder = (order) => {
     setPickedUpOrders(pickedUpOrders.filter((o) => o.id !== order.id));
     setCompletedOrders([...completedOrders, order]);

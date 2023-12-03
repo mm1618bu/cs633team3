@@ -1,4 +1,3 @@
-// RegistrationForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -16,7 +15,6 @@ const RegistrationForm = () => {
   const handleRegistration = async (e) => {
     e.preventDefault();
 
-    // Basic form validation
     if (!firstName || !lastName || !email || !phone || !username || !password || !confirmPassword) {
       setError('All fields are required.');
       return;
@@ -30,7 +28,6 @@ const RegistrationForm = () => {
     try {
       setLoading(true);
 
-      // Make a POST request to the registration endpoint
       const response = await axios.post('http://localhost:5000/api/register', {
         firstName,
         lastName,
@@ -40,10 +37,8 @@ const RegistrationForm = () => {
         password,
       });
 
-      // Registration successful
       alert('Registration successful!');
     } catch (error) {
-      // Registration failed
       setError('Registration failed. Please try again.');
     } finally {
       setLoading(false);

@@ -41,7 +41,7 @@ const FoodCategoryList = () => {
         name: 'Meat',
         image: imgwrap,
       },
-    // Add more categories and images as needed
+
   ];
 
   return (
