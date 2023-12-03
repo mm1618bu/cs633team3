@@ -8,63 +8,78 @@ class Checkout extends Component {
     super(props);
 
     this.state = {
-      customerInfo: {
+      accountDetails: {
         name: '',
         email: '',
         phone: '',
       },
-      deliveryInfo: {
-        address: '',
-        deliveryTime: '',
-      },
-      paymentInfo: {
-        customerName:'',
-        cardNumber: '',
-        expirationDate: '',
-        cvv: '',
-        tip: '',
-      },
-      couponCode: '',
+      deliveryOption: 'pickup', // Default to pickup
+      deliveryType: 'normal', // Default to normal
+      deliveryAddress: '',
+      dropOffLocation: '',
+      subtotal: 0, // Assuming you'll calculate the subtotal somewhere
+      deliveryFee: 5, // Example delivery fee
+      tip: 0,
     };
   }
 
   // Functions to handle form input changes
-  handleCustomerInfoChange = (e) => {
+  handleAccountDetailsChange = (e) => {
     this.setState({
-      customerInfo: {
-        ...this.state.customerInfo,
+      accountDetails: {
+        ...this.state.accountDetails,
         [e.target.name]: e.target.value,
       },
     });
   };
 
-  handleDeliveryInfoChange = (e) => {
+  handleDeliveryOptionChange = (e) => {
     this.setState({
-      deliveryInfo: {
-        ...this.state.deliveryInfo,
-        [e.target.name]: e.target.value,
-      },
+      deliveryOption: e.target.value,
     });
   };
 
-  handlePaymentInfoChange = (e) => {
+  handleDeliveryTypeChange = (e) => {
     this.setState({
-      paymentInfo: {
-        ...this.state.paymentInfo,
-        [e.target.name]: e.target.value,
-      },
+      deliveryType: e.target.value,
     });
   };
-  
-  handleCouponCodeChange = (e) => {
+
+  handleDeliveryAddressChange = (e) => {
     this.setState({
-      couponCode: e.target.value,
+      deliveryAddress: e.target.value,
+    });
+  };
+
+  handleDropOffLocationChange = (e) => {
+    this.setState({
+      dropOffLocation: e.target.value,
+    });
+  };
+
+  // Function to handle tip change
+  handleTipChange = (e) => {
+    this.setState({
+      tip: parseFloat(e.target.value) || 0,
+    });
+  };
+
+  // Function to handle tip selection
+  handleTipOption = (amount) => {
+    this.setState({
+      tip: amount,
     });
   };
 
   // Function to handle checkout
   handleCheckout = () => {
-    console.log('Checkout clicked. Data to submit:', this.state);
+    // Calculate total by adding subtotal, delivery fee, and tip
+    const total = this.state.subtotal + this.state.deliveryFee + this.state.tip;
+
+    console.log('Checkout clicked. Data to submit:', {
+      ...this.state,
+      total,
+    });
   };
 
   render() {
@@ -72,108 +87,110 @@ class Checkout extends Component {
       <div className="checkout-container">
         <h2 className="check">Checkout</h2>
 
-        <div className="form-sections">
-          <div className="form-section">
-            <h3 className="check">Customer Information</h3>
-            <form id="intake-form">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={this.state.customerInfo.name}
-                onChange={this.handleCustomerInfoChange}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={this.state.customerInfo.email}
-                onChange={this.handleCustomerInfoChange}
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                value={this.state.customerInfo.phone}
-                onChange={this.handleCustomerInfoChange}
-              />
-            </form>
-          </div>
-
-          <div className="form-section">
-            <h3 className="check">Delivery Information</h3>
-            <form id='intake-form'>
-              <input
-                type="text"
-                name="address"
-                placeholder="Delivery Address"
-                value={this.state.deliveryInfo.address}
-                onChange={this.handleDeliveryInfoChange}
-              />
-              <input
-                type="text"
-                name="deliveryTime"
-                placeholder="Delivery Time"
-                value={this.state.deliveryInfo.deliveryTime}
-                onChange={this.handleDeliveryInfoChange}
-              />
-            </form>
-          </div>
-
-          <div className="form-section">
-            <h3 className="check">Payment Information</h3>
-            <form id='intake-form'>
-              <input
-                type="text"
-                name="customerName"
-                placeholder="Customer Name"
-                value={this.state.paymentInfo.customerName}
-                onChange={this.handlePaymentInfoChange}
-              />
-              <input
-                type="text"
-                name="cardNumber"
-                placeholder="Card Number"
-                value={this.state.paymentInfo.cardNumber}
-                onChange={this.handlePaymentInfoChange}
-              />
-              <input
-                type="text"
-                name="expirationDate"
-                placeholder="Expiration Date (MM/YY)"
-                value={this.state.paymentInfo.expirationDate}
-                onChange={this.handlePaymentInfoChange}
-              />
-              <input
-                type="password"
-                name="cvv"
-                placeholder="CVV"
-                value={this.state.paymentInfo.cvv}
-                onChange={this.handlePaymentInfoChange}
-              />
-              <input
-                type="text"
-                name="tip"
-                placeholder="Tip Amount"
-                value={this.state.paymentInfo.tip}
-                onChange={this.handlePaymentInfoChange}
-              />
-            </form>
-          </div>
-        </div>
-
         <div className="form-section">
-          <h3 className="check">Coupon Code</h3>
-          <form id="intake-form">
+          <h3 className="check">Account Details</h3>
+          <form>
             <input
               type="text"
-              name="couponCode"
-              placeholder="Enter coupon code"
-              value={this.state.couponCode}
-              onChange={this.handleCouponCodeChange}
+              name="name"
+              placeholder="Name"
+              value={this.state.accountDetails.name}
+              onChange={this.handleAccountDetailsChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={this.state.accountDetails.email}
+              onChange={this.handleAccountDetailsChange}
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              value={this.state.accountDetails.phone}
+              onChange={this.handleAccountDetailsChange}
             />
           </form>
         </div>
+
+        {/* Delivery Options Section */}
+        <div className="form-section">
+          <h3 className="check">Delivery Options</h3>
+          <form>
+            <label>
+              <input
+                type="radio"
+                name="deliveryOption"
+                value="pickup"
+                checked={this.state.deliveryOption === 'pickup'}
+                onChange={this.handleDeliveryOptionChange}
+              />
+              Pickup
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="deliveryOption"
+                value="delivery"
+                checked={this.state.deliveryOption === 'delivery'}
+                onChange={this.handleDeliveryOptionChange}
+              />
+              Delivery
+            </label>
+
+            {this.state.deliveryOption === 'delivery' && (
+              <div>
+                <label>
+                  <input
+                    type="radio"
+                    name="deliveryType"
+                    value="normal"
+                    checked={this.state.deliveryType === 'normal'}
+                    onChange={this.handleDeliveryTypeChange}
+                  />
+                  Normal Delivery
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="deliveryType"
+                    value="express"
+                    checked={this.state.deliveryType === 'express'}
+                    onChange={this.handleDeliveryTypeChange}
+                  />
+                  Express Delivery
+                </label>
+
+                <input
+                  type="text"
+                  name="deliveryAddress"
+                  placeholder="Delivery Address"
+                  value={this.state.deliveryAddress}
+                  onChange={this.handleDeliveryAddressChange}
+                />
+                <input
+                  type="text"
+                  name="dropOffLocation"
+                  placeholder="Drop-off Location"
+                  value={this.state.dropOffLocation}
+                  onChange={this.handleDropOffLocationChange}
+                />
+              </div>
+            )}
+          </form>
+        </div>
+
+        <div className="form-section">
+          <h3 className="check">Tip Options</h3>
+          <div className="tip-options">
+            <button onClick={() => this.handleTipOption(2)}>$2.00</button>
+            <button onClick={() => this.handleTipOption(3)}>$3.00</button>
+            <button onClick={() => this.handleTipOption(4)}>$4.00</button>
+            <button onClick={() => this.handleTipOption(5)}>$5.00</button>
+          </div>
+        </div>
+
         <button onClick={this.handleCheckout}>Place Order</button>
       </div>
     );

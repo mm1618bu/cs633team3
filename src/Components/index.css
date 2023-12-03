@@ -1857,3 +1857,13 @@ input[type="text"] {
 .status-text {
   color: green; 
 }
+
+.tip-options-button{
+  background-color: #e7e7e7;
+  border-radius: 100px 0px 0px 100px;
+  height: 32px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 99px;
+}
