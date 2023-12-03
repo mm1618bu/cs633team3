@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import ShoppingCart from './ShoppingCart';
+import OrderShoppingCart from './ShoppingCart';
 import Reviews from './Reviews';
 
 const foodItems = [
@@ -55,43 +55,43 @@ const foodItems = [
     }
   ];
   const McDonalds = () => {
-    const [cartItems, setCartItems] = useState([]);
+    const [orderItems, setOrderItems] = useState([]);
   
-    const addToCart = (item) => {
-      const itemIndex = cartItems.findIndex((cartItem) => cartItem.name === item.name);
+    const addToOrder = (item) => {
+      const itemIndex = orderItems.findIndex((orderItem) => orderItem.name === item.name);
   
       if (itemIndex === -1) {
-        setCartItems([...cartItems, { ...item, quantity: 1 }]);
+        setOrderItems([...orderItems, { ...item, quantity: 1 }]);
       } else {
-        const updatedCartItems = [...cartItems];
-        updatedCartItems[itemIndex].quantity += 1;
-        setCartItems(updatedCartItems);
+        const updatedOrderItems = [...orderItems];
+        updatedOrderItems[itemIndex].quantity += 1;
+        setOrderItems(updatedOrderItems);
       }
     };
   
-    const removeFromCart = (item) => {
-      const updatedCartItems = cartItems.filter((cartItem) => cartItem.name !== item.name);
-      setCartItems(updatedCartItems);
+    const removeFromOrder = (item) => {
+      const updatedOrderItems = orderItems.filter((orderItem) => orderItem.name !== item.name);
+      setOrderItems(updatedOrderItems);
     };
   
     const increaseQuantity = (item) => {
-      const updatedCartItems = cartItems.map((cartItem) => {
-        if (cartItem.name === item.name) {
-          cartItem.quantity += 1;
+      const updatedOrderItems = orderItems.map((cartItem) => {
+        if (orderItems.name === item.name) {
+          orderItems.quantity += 1;
         }
-        return cartItem;
+        return orderItems;
       });
-      setCartItems(updatedCartItems);
+      setOrderItems(updatedOrderItems);
     };
   
     const decreaseQuantity = (item) => {
-      const updatedCartItems = cartItems.map((cartItem) => {
-        if (cartItem.name === item.name && cartItem.quantity > 1) {
-          cartItem.quantity -= 1;
+      const updatedOrderItems = orderItems.map((orderItem) => {
+        if (orderItem.name === item.name && orderItem.quantity > 1) {
+          orderItem.quantity -= 1;
         }
-        return cartItem;
+        return orderItem;
       });
-      setCartItems(updatedCartItems);
+      setOrderItems(updatedOrderItems);
     };
   
     return (
@@ -105,12 +105,12 @@ const foodItems = [
                 <p>{item.description}</p>
                 <p>Price: ${item.price}</p>
                 <p>Calories: {item.calories} cal</p>
-                <button onClick={() => addToCart(item)}>Add</button>
-                <button onClick={() => removeFromCart(item)}>Remove</button>
-                {cartItems.find((cartItem) => cartItem.name === item.name) && (
+                <button onClick={() => addToOrder(item)}>Add</button>
+                <button onClick={() => removeFromOrder(item)}>Remove</button>
+                {orderItems.find((orderItem) => orderItem.name === item.name) && (
                   <div className="quantity-control">
                     <button onClick={() => decreaseQuantity(item)}>-</button>
-                    <span>{cartItems.find((cartItem) => cartItem.name === item.name).quantity}</span>
+                    <span>{orderItems.find((orderItem) => orderItem.name === item.name).quantity}</span>
                     <button onClick={() => increaseQuantity(item)}>+</button>
                   </div>
                 )}
@@ -119,7 +119,7 @@ const foodItems = [
             </div>
           ))}
         </div>
-        <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
+        <OrderShoppingCart orderItems={orderItems} removeFromOrder={removeFromOrder} />
         <Reviews />
       </div>
     );
