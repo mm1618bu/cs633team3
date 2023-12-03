@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import './App.css';
 import './Components/index.css';
 import './Components/DashPass.css';
+import './Components/HomePage.css';
 import Header from './Components/Header';
 //import Footer from './Components/Footer';
 import FoodCategoryList from './Components/FoodCategoryList';
@@ -36,6 +37,9 @@ import Dennys from './Components/Dennys';
 import BuffaloWildWings from './Components/BuffaloWildWings';
 import RegistrationForm from './Components/RegistrationForm';
 import OrderHistory from './Components/OrderHistory';
+import Coupons from './Components/Coupons';
+import BenefitsPopUp from './Components/BenefitsPopUp';
+import HomePage from './Components/HomePage';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -73,9 +77,12 @@ function App() {
         <Route path='registration' element={<RegistrationForm/>}/>
         <Route path='order-history' element={<OrderHistory/>}/>
         <Route path='dashpass' element={<DashPass/>}/>
+        <Route path='benefits' element={<BenefitsPopUp/>}/>
+        <Route path='home' element={<HomePage/>}/>
       </Routes>
       <VerticalNavbar />
       <RestaurantCard />
+      <Coupons/>
     </div>
     
   );

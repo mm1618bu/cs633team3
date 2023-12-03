@@ -83,7 +83,7 @@ class Checkout extends Component {
         <h2 className="check">Checkout</h2>
 
         <div className="form-section">
-          <h3 className="check">Account Details</h3>
+          <h3 className="check">Your Info</h3>
           <form>
             <input
               type="text"
@@ -91,6 +91,7 @@ class Checkout extends Component {
               placeholder="Name"
               value={this.state.accountDetails.name}
               onChange={this.handleAccountDetailsChange}
+              required
             />
             <input
               type="email"
@@ -98,6 +99,7 @@ class Checkout extends Component {
               placeholder="Email"
               value={this.state.accountDetails.email}
               onChange={this.handleAccountDetailsChange}
+              required
             />
             <input
               type="tel"
@@ -105,11 +107,11 @@ class Checkout extends Component {
               placeholder="Phone"
               value={this.state.accountDetails.phone}
               onChange={this.handleAccountDetailsChange}
+              required
             />
           </form>
         </div>
 
-        {/* Delivery Options Section */}
         <div className="form-section">
           <h3 className="check">Delivery Options</h3>
           <form>
@@ -184,6 +186,21 @@ class Checkout extends Component {
             <button onClick={() => this.handleTipOption(4)}>$4.00</button>
             <button onClick={() => this.handleTipOption(5)}>$5.00</button>
           </div>
+        </div>
+
+        <div className="form-section">
+          <h3>Payment</h3>
+          <form>
+              <label htmlFor='cardNumber'>Card Number</label>
+              <input type='text' id="cardNumber" required/>
+              <label htmlFor='nameOnCard'>Name on Card</label>
+              <input type='text' id='nameOnCard' required/>
+              <label htmlFor='pincode'>Security Code</label>
+              <input type='password' id='pincode' required></input>
+              <label htmlFor='expiration'>Experation Date</label>
+              <input type='text' id='expiration' required></input>
+          </form>
+          
         </div>
 
         <button>
