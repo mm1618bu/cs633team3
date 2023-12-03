@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import OrderShoppingCart from './ShoppingCart';
+import OrderShoppingCart from './OrderShoppingCart';
 import Reviews from './Reviews';
 
 const foodItems = [
