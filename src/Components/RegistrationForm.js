@@ -8,19 +8,18 @@ const RegistrationForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  //const [error, setError] = useState('');
 
   const handleRegistration = async (e) => {
     e.preventDefault();
 
     if (!firstName || !lastName || !email || !phone || !username || !password || !confirmPassword) {
-      setError('All fields are required.');
+    //  setError('All fields are required.');
       return;
     }
 
     if (password !== confirmPassword) {
-      setError('Passwords do not match.');
+     // setError('Passwords do not match.');
       return;
     }
   }
@@ -92,9 +91,7 @@ const RegistrationForm = () => {
           />
         </label>
         <br />
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button type="submit" disabled={loading}>
-          {loading ? 'Registering...' : 'Register'}
+        <button type="submit">
         </button>
       </form>
     </div>

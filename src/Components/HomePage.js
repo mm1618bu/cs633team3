@@ -37,7 +37,7 @@ export const HomePage = () => {
         </div>
         <div className="group-4">
           <div className="group-5">
-            <img className="image" alt="Image" src="image-10.png" />
+            <img className="image" alt="replacement" src="image-10.png" />
             <div className="group-6">
               <div className="text-wrapper-4">Become a Driver</div>
               <p className="as-a-delivery-driver">
@@ -50,7 +50,7 @@ export const HomePage = () => {
             </div>
           </div>
           <div className="group-8">
-            <img className="image-2" alt="Image" src="image-11.png" />
+            <img className="image-2" alt="replacement" src="image-11.png" />
             <div className="group-9">
               <div className="text-wrapper-6">Become a Partner</div>
               <p className="text-wrapper-7">Grow your business and reach new customers by partnering with us.</p>
@@ -102,7 +102,7 @@ export const HomePage = () => {
             <div className="rectangle-3" />
             <div className="group-20">
               <div className="group-21">
-                <img className="image-3" alt="Image" src="image-16.png" />
+                <img className="image-3" alt="replacement" src="image-16.png" />
                 <div className="group-22">
                   <p className="text-wrapper-16">FooderPass is delivery for less</p>
                   <p className="text-wrapper-17">
@@ -128,7 +128,7 @@ export const HomePage = () => {
                     <div className="text-wrapper-21">Find Restaurants</div>
                   </div>
                 </div>
-                <img className="image-4" alt="Image" src="image-15.png" />
+                <img className="image-4" alt="replacement" src="image-15.png" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ export const HomePage = () => {
                     <div className="text-wrapper-24">Privacy</div>
                     <div className="text-wrapper-25">© 2023 Fooder</div>
                     <div className="text-wrapper-26">California Privacy</div>
-                    <img className="image-5" alt="Image" src="image-48.png" />
+                    <img className="image-5" alt="replacement" src="image-48.png" />
                   </div>
                 </div>
                 <div className="group-29">
@@ -313,7 +313,7 @@ export const HomePage = () => {
         <div className="overlap-17">
           <div className="group-wrapper">
             <div className="group-51">
-              <img className="image-6" alt="Image" src="image-51.png" />
+              <img className="image-6" alt="replacement" src="image-51.png" />
               <div className="group-52">
                 <p className="text-wrapper-16">Grow your business with Fooder</p>
                 <p className="text-wrapper-17">
@@ -341,7 +341,7 @@ export const HomePage = () => {
                 </div>
               </div>
             </div>
-            <img className="image-7" alt="Image" src="image-50.png" />
+            <img className="image-7" alt="replacement" src="image-50.png" />
           </div>
         </div>
         <p className="text-wrapper-74">Unlocking opportunity for Drivers and businesses</p>
@@ -365,7 +365,7 @@ export const HomePage = () => {
                       </div>
                     </div>
                   </div>
-                  <img className="image-8" alt="Image" src="image-19.png" />
+                  <img className="image-8" alt="replacement" src="image-19.png" />
                 </div>
                 <div className="group-64">
                   <div className="group-65">
@@ -379,13 +379,13 @@ export const HomePage = () => {
                       </div>
                     </div>
                   </div>
-                  <img className="image-9" alt="Image" src="image-20.png" />
+                  <img className="image-9" alt="replacement" src="image-20.png" />
                 </div>
               </div>
             </div>
           </div>
           <div className="group-67">
-            <img className="image-10" alt="Image" src="image.png" />
+            <img className="image-10" alt="replacement" src="image.png" />
             <div className="group-68">
               <p className="text-wrapper-16">Convenience stores at your doorstep</p>
               <p className="text-wrapper-82">

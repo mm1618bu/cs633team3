@@ -149,7 +149,7 @@ const DashPass = () => {
           <img className="facebook" alt="Facebook" src="facebook.png" />
         </div>
         <img className="line-2" alt="Line" src="line-1.svg" />
-        <img className="image" alt="Image" src="image-48.png" />
+        <img className="image" alt="replacement" src="image-48.png" />
       </footer>
       <div className="overlap-12">
         <div className="group-20">
@@ -272,7 +272,7 @@ const DashPass = () => {
             </div>
           </div>
         </div>
-        <img className="image-2" alt="Image" src="image-48-2.png" />
+        <img className="image-2" alt="replacement" src="image-48-2.png" />
       </div>
     </div>
   );
