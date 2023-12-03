@@ -127,6 +127,7 @@ const DriverPortal = () => {
           <ul>
             {availableOrders.map((order) => (
               <li id="confirm-cart" key={order.id}>
+                <p>Order #: {order.id}</p>
                 <p>Store: {order.store}</p>
                 <p>Customer: {order.customer}</p>
                 <p>Address: {order.Address}</p>
@@ -143,6 +144,7 @@ const DriverPortal = () => {
           <ul>
             {pickedUpOrders.map((order) => (
               <li id="confirm-cart" key={order.id}>
+                <p>Order #: {order.id}</p>
                 <p>Store: {order.store}</p>
                 <p>Customer: {order.customer}</p>
                 <p>Total: ${order.total}</p>
@@ -157,6 +159,7 @@ const DriverPortal = () => {
           <ul>
             {completedOrders.map((order) => (
               <li id="confirm-cart" key={order.id}>
+                <p>Order #: {order.id}</p>
                 <p>Store: {order.store}</p>
                 <p>Customer: {order.customer}</p>
                 <p>Total: ${order.total}</p>
