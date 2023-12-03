@@ -4,12 +4,13 @@ function Header() {
   return (
     <div className="topheader">
       <div className="top-logo-container">
+        <a href="/">
         <img
           className="logo"
           src= {imgfooder}
           alt="DoorDash Logo"
-        />
-      </div>
+        /></a>      
+        </div>
       <div className="top-options">
         <div className="top-pickup-delivery-options">
           <label>
