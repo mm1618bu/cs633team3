@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <FoodCategoryList />
+      <FoodCategoryList restaurants={restaurants}/>
       <Routes>
         <Route path="/" element={ <McDonalds/> } />
         <Route path="burger-king" element={ <BurgerKing/> } />
