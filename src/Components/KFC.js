@@ -101,6 +101,8 @@ const KFC = () => {
   return (
     <div className="order-page">
       <h1>Featured Items</h1>
+       {/* Reviews Component */}
+       <Reviews />
       <div className="food-grid">
         {foodItems.map((item, index) => (
           <div key={index} className="food-card">
