@@ -1,9 +1,11 @@
 .benefits-pop-up {
-    background-color: #ffffff;
-    border-radius: 25px;
-    height: 1515px;
-    overflow: hidden;
-    width: 560px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  height: 1515px;
+  overflow: hidden;
+  width: 560px;
+  position: relative;
+  left: 30%;
   }
   
   .benefits-pop-up .group {
@@ -153,7 +155,9 @@
     object-fit: cover;
     position: absolute;
     top: 162px;
-    width: 486px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .overlap-group {
@@ -221,8 +225,10 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: 160px;
-    width: 486px;
+    top: 162px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .group-8 {
@@ -295,8 +301,10 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: 135px;
-    width: 486px;
+    top: 162px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .text-wrapper-8 {
@@ -374,8 +382,10 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: 118px;
-    width: 486px;
+    top: 162px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .text-wrapper-9 {
@@ -442,8 +452,10 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: 123px;
-    width: 486px;
+    top: 162px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .text-wrapper-11 {
@@ -507,8 +519,10 @@
     left: 0;
     object-fit: cover;
     position: absolute;
-    top: 125px;
-    width: 486px;
+    top: 162px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .benefits-pop-up .group-16 {

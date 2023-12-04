@@ -1409,14 +1409,16 @@
 
 .restaurant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
+  margin-left: 90px;
+  margin-right: 80px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .restaurant-grid h2{
   justify-content: stretch;
-  color: red;
+  color: rgb(3, 0, 0);
 }
 
 .restaurant-card {
@@ -1427,7 +1429,10 @@
   background-color: #fff;
   text-align: left;
   cursor: pointer;
+  width: 300px;
+  height: 180px;
 }
+
 
 .footer-container {
   display: flex;
@@ -1483,6 +1488,7 @@ a {
 .restaurant-delivery-time {
   font-size: 1rem;
   margin: 5px 0;
+  color: rgb(171, 162, 162);
 }
 
 .restaurant-cuisine {
@@ -1506,15 +1512,16 @@ a {
 }
 
 .order-page {
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 10px;
 }
 
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  
+  grid-template-columns: repeat(2, 1fr);
+
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 400px;
 }
 
 .food-card {
@@ -1522,16 +1529,27 @@ a {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  left: 45px;
+  display: inline-block;
+  line-height: 0.5;
+  font-size: 14px;
 }
+
+
 
 .food-card img {
   max-width: 100%;
   max-height: 200px;
+  position: relative;
+  left: 400px;
 }
 
 button{
-  background-color: #eb1600;
+  background-color: #c4c4c4;
   color: #fff;
   border: none;
   margin: 10px 10px;
@@ -1539,17 +1557,18 @@ button{
   border-radius: 10px;
   cursor: pointer;
   height: 40px;
-  width: 25%;
+  width: 100px;
 }
 
+
 .food-card button {
-  background-color: #eb1600;
-  padding: 5px; 
-  border-radius: 16px; 
-  border: none; 
-  color: white; 
-  font-size: 16px; 
-  cursor: pointer; 
+  background-color: #bcb4b3;
+  padding: 5px;
+  border-radius: 16px;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
   margin: 4px;
 }
 
@@ -1565,10 +1584,10 @@ button{
 
 
 .shopping-cart {
-  flex: 1; 
-  margin-left: 20px;
+  flex: 1 1;
+  margin-left: 90px;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 50px;
 }
 
 .checkout-container {
@@ -1662,8 +1681,11 @@ h3.check {
 /* VerticalNavbar.css */
 .vertical-navbar {
   background-color: #333;
-  width: 200px;
+  width: 150px;
   color: white;
+  position: relative;
+  bottom: 1180px;
+  
 }
 
 .vertical-navbar ul {
@@ -1715,15 +1737,18 @@ input[type="radio"] {
 
 input[type="text"] {
   width: 250px;
+  margin: 30px;
 }
 
 #top-button {
   background-color: #ff5722;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 2px;
+  border-radius: 10px;
   cursor: pointer;
+  position: relative;
+  top: 8px;
 }
 
 #top-button:hover {
