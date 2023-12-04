@@ -5,15 +5,15 @@ const Reviews = () => {
   const reviewsData = [
     {
       id: 1,
-      user: 'John Doe',
-      rating: 4,
-      comment: 'Great food and fast delivery!',
+      user: 'Alan Killian',
+      rating: 5,
+      comment: 'Got my order fast and warm',
     },
     {
       id: 2,
-      user: 'Jane Smith',
-      rating: 5,
-      comment: 'Excellent service and delicious meals!',
+      user: 'Kathy Jones',
+      rating: 3,
+      comment: 'Delivery fee was a bit pricy',
     },
   ];
 

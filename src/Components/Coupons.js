@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './Coupons.css';
 
 const Coupons = () => {
   return (
