@@ -34,7 +34,7 @@ const OrderHistory = () => {
         <ul>
           {orderHistory.map((order) => (
             <li key={order.orderId}>
-              Order ID: {order.orderId}, Total: ${order.totalAmount.toFixed(2)}, Date: {order.orderDate}
+              Order ID: {order.orderId}, Total: ${order.amount.toFixed(2)}, Date: {order.orderDate}
               
             </li>
           ))}
