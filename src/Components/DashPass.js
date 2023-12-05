@@ -1,5 +1,6 @@
 import React from "react";
 import "./DashPass.css";
+import "./Dashpass1.css";
 
 const DashPass = () => {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Benefits.css";
+import "./benefits1.css";
 
 export const BenefitsPopUp = () => {
   return (
