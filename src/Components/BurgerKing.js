@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './index.css'; 
 import OrderShoppingCart from './OrderShoppingCart';
 import Reviews from './Reviews';
+
 const foodItems = [
   {
     "name": "Whopper",
@@ -96,6 +97,22 @@ const BurgerKing = () => {
 
   return (
     <div className="order-page">
+      <div className='restaurant-info'>
+        <h2>Store Name</h2>
+        <p> Cuisine + Star + Ratings + Miles + Price</p>
+        <table>
+          <tr>
+            <td>Delivery Fee</td>
+            <td>Time</td>
+          </tr>
+          <tr>
+            <td>$9.00</td>
+            <td>30 mins</td>
+          </tr>
+        </table>
+        <button>Save</button>
+        <button>Group Order</button>
+      </div>
       <h1>Featured Items</h1>
       <div className="food-grid">
         {foodItems.map((item, index) => (
