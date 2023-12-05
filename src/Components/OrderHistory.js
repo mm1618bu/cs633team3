@@ -6,9 +6,9 @@ const OrderHistory = () => {
 
   useEffect(() => {
     const fakeOrderData = [
-      { orderId: 1, totalAmount: 25.99, orderDate: '2023-12-01T10:30:00Z' },
-      { orderId: 2, totalAmount: 39.95, orderDate: '2023-11-30T15:45:00Z' },
-      { orderId: 3, totalAmount: 19.99, orderDate: '2023-11-28T18:20:00Z' },
+      { orderId: 1, amount: 24.00, orderDate: '12/01/2023' },
+      { orderId: 2, amount: 25.00, orderDate: '12/02/2023' },
+      { orderId: 3, amount: 26.00, orderDate: '12/03/2023' },
     ];
 
 
@@ -20,13 +20,6 @@ const OrderHistory = () => {
     return () => clearTimeout(delay);
   }, []);
 
-  const handleLeaveReview = (orderId) => {
-    console.log(`Leaving a review for order ${orderId}`);
-  };
-
-  const handleReorder = (orderId) => {
-    console.log(`Reordering order ${orderId}`);
-  };
 
   if (loading) {
     return <p>Loading order history...</p>;
@@ -41,12 +34,8 @@ const OrderHistory = () => {
         <ul>
           {orderHistory.map((order) => (
             <li key={order.orderId}>
-              {/* Display relevant order information */}
               Order ID: {order.orderId}, Total: ${order.totalAmount.toFixed(2)}, Date: {order.orderDate}
               
-              {/* Buttons for actions */}
-              <button onClick={() => handleLeaveReview(order.orderId)}>Leave a Review</button>
-              <button onClick={() => handleReorder(order.orderId)}>Reorder</button>
             </li>
           ))}
         </ul>
