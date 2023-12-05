@@ -105,7 +105,7 @@
       "deliveryTime": 15,
       "cuisine": "Fast Food",
       "image": "mcdonalds.jpg",
-      "url": "/mcdonalds"
+      "url": "/"
     },
     {
       "name": "Burger King",
