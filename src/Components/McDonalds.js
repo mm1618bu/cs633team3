@@ -6,13 +6,12 @@ import Reviews from './Reviews';
 const foodItems = [
     {
       "name": "Big Mac",
-      "description": "The one and only McDonald's Big Mac.",
       "price": 4.99,
       "calories": 550,
       "image": "Big_Mac.png"
     },
     {
-      "name": "Quarter Pounder with Cheese",
+      "name": "Quarter Pounder w/ Cheese",
       "price": 3.79,
       "calories": 520,
       "image": "Quater_Pounder.png"
@@ -30,7 +29,7 @@ const foodItems = [
       "image": "Chicken_Breast_Meat.png"
     },
     {
-      "name": "French Fries",
+      "name": "Fries",
       "price": 1.89,
       "calories": 365,
       "image": "Fench_Fries.png"
@@ -42,7 +41,7 @@ const foodItems = [
       "image": "Apple_Slices.png"
     },
     {
-      "name": "Coca-Cola",
+      "name": "Coke",
       "price": 1.69,
       "calories": 140,
       "image": "Soda.png"
@@ -75,7 +74,7 @@ const foodItems = [
     };
   
     const increaseQuantity = (item) => {
-      const updatedOrderItems = orderItems.map((cartItem) => {
+      const updatedOrderItems = orderItems.map((orderItems) => {
         if (orderItems.name === item.name) {
           orderItems.quantity += 1;
         }

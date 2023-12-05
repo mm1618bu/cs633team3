@@ -6,55 +6,54 @@ import Reviews from './Reviews';
 const foodItems = [
   {
     "name": "Traditional Wings",
-    "description": "Classic chicken wings with your choice of sauce.",
+    "description": "Our Chicken Wings",
     "price": 10.99,
     "calories": 800,
     "image": "traditional_wings.jpg"
   },
   {
     "name": "Boneless Wings",
-    "description": "Boneless chicken wings with various sauce options.",
+    "description": "Boneless chicken wings",
     "price": 9.99,
     "calories": 700,
     "image": "boneless_wings.jpg"
   },
   {
     "name": "Buffalo Chicken Nachos",
-    "description": "Crispy nachos topped with shredded buffalo chicken, cheese, and veggies.",
+    "description": "Nachos, shredded buffalo chicken, cheese, and veggies.",
     "price": 12.49,
     "calories": 850,
     "image": "buffalo_chicken_nachos.jpg"
   },
   {
     "name": "Chicken Quesadilla",
-    "description": "Grilled chicken, cheese, and veggies in a warm tortilla.",
+    "description": "Grilled chicken, cheese, and veggies, tortilla.",
     "price": 8.99,
     "calories": 600,
     "image": "chicken_quesadilla.jpg"
   },
   {
     "name": "Buffalo Ranch Wrap",
-    "description": "Grilled chicken, lettuce, tomatoes, and ranch dressing in a wrap.",
     "price": 11.99,
     "calories": 750,
     "image": "buffalo_ranch_wrap.jpg"
   },
   {
     "name": "Mozzarella Sticks",
-    "description": "Golden fried mozzarella sticks served with marinara sauce.",
+    "description": "mozzarella sticks, marinara sauce.",
     "price": 7.99,
     "calories": 450,
     "image": "mozzarella_sticks.jpg"
   },
   {
-    "name": "Buffalo Wild Wings Sampler",
-    "description": "A variety of wings, tenders, and mozzarella sticks with different sauces.",
+    "name": "Sampler",
+    "description": " wings, tenders, and mozzarella sticks with different sauces.",
     "price": 15.99,
     "calories": 1100,
     "image": "bww_sampler.jpg"
   },
   {
-    "name": "Soft Drinks",
+    "name": "Soda",
     "price": 2.49,
     "calories": 150,
     "image": "soft_drinks.jpg"

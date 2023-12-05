@@ -6,7 +6,6 @@ import Reviews from './Reviews';
 const foodItems = [
   {
       "name": "Bacon Turkey Bravo Sandwich",
-      "description": "Smoked turkey breast, bacon, smoked Gouda, lettuce, tomatoes, and signature sauce on tomato basil bread.",
       "price": 8.49,
       "calories": 560,
       "image": "bacon_turkey_bravo.jpg"
@@ -19,14 +18,12 @@ const foodItems = [
   },
   {
       "name": "Fuji Apple Chicken Salad",
-      "description": "Chicken, mixed field greens, romaine lettuce, and vine-ripened tomatoes with red onions, pecans, Gorgonzola cheese, and Fuji apple vinaigrette.",
       "price": 9.99,
       "calories": 570,
       "image": "fuji_apple_chicken_salad.jpg"
   },
   {
       "name": "Mediterranean Veggie Sandwich",
-      "description": "Zesty sweet Peppadew piquant peppers, feta cheese, cucumbers, lettuce, vine-ripened tomatoes, red onions, and cilantro-jalapeno hummus on thin-sliced Tomato Basil.",
       "price": 7.99,
       "calories": 460,
       "image": "mediterranean_veggie_sandwich.jpg"

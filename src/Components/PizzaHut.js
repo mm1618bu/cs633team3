@@ -6,42 +6,36 @@ import Reviews from './Reviews';
 const foodItems = [
   {
       "name": "Supreme Pizza",
-      "description": "Loaded with pepperoni, Italian sausage, green bell peppers, red onions, and black olives.",
       "price": 14.99,
       "calories": 280,
       "image": "supreme_pizza.jpg"
   },
   {
       "name": "Hawaiian Pizza",
-      "description": "A classic with pineapple, ham, and mozzarella cheese.",
       "price": 12.99,
       "calories": 320,
       "image": "hawaiian_pizza.jpg"
   },
   {
       "name": "Meat Lover's Pizza",
-      "description": "Piled high with pepperoni, Italian sausage, bacon, and ham.",
       "price": 16.99,
       "calories": 350,
       "image": "meat_lovers_pizza.jpg"
   },
   {
       "name": "Veggie Lover's Pizza",
-      "description": "A medley of green bell peppers, red onions, mushrooms, and black olives.",
       "price": 13.99,
       "calories": 250,
       "image": "veggie_lovers_pizza.jpg"
   },
   {
       "name": "Chicken Alfredo Pasta",
-      "description": "Fettuccine pasta with creamy Alfredo sauce and grilled chicken.",
       "price": 11.99,
       "calories": 450,
       "image": "chicken_alfredo_pasta.jpg"
   },
   {
       "name": "Stuffed Garlic Knots",
-      "description": "Soft, garlic-flavored knots stuffed with melted cheese and served with marinara sauce.",
       "price": 6.99,
       "calories": 280,
       "image": "stuffed_garlic_knots.jpg"

@@ -6,47 +6,46 @@ import Reviews from './Reviews';
 const foodItems = [
   {
     "name": "Burrito",
-    "description": "A classic burrito filled with your choice of protein, rice, beans, and toppings.",
+    "description": "A classic burrito.",
     "price": 7.99,
     "calories": 700,
     "image": "burrito.jpg"
   },
   {
     "name": "Bowl",
-    "description": "A bowl with your choice of protein, rice, beans, and toppings.",
+    "description": "A bowl.",
     "price": 7.49,
     "calories": 600,
     "image": "bowl.jpg"
   },
   {
     "name": "Tacos (3-Pack)",
-    "description": "Three soft or hard shell tacos with your choice of protein and toppings.",
+    "description": "Three soft or hard shell tacos.",
     "price": 8.99,
     "calories": 450,
     "image": "tacos.jpg"
   },
   {
     "name": "Quesadilla",
-    "description": "A quesadilla filled with your choice of protein, cheese, and toppings.",
+    "description": "quesadilla.",
     "price": 6.99,
     "calories": 550,
     "image": "quesadilla.jpg"
   },
   {
-    "name": "Chips and Guacamole",
+    "name": "Chips & Guac",
     "price": 3.49,
     "calories": 320,
     "image": "chips_guacamole.jpg"
   },
   {
     "name": "Salad",
-    "description": "A salad with your choice of protein, greens, and toppings.",
     "price": 8.49,
     "calories": 400,
     "image": "salad.jpg"
   },
   {
-    "name": "Soda",
+    "name": "Coke",
     "price": 1.99,
     "calories": 150,
     "image": "soda.jpg"

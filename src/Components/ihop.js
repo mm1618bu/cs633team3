@@ -5,36 +5,31 @@ import Reviews from './Reviews';
 
 const foodItems = [
   {
-    "name": "Pancake Stack",
-    "description": "A stack of fluffy pancakes served with syrup and butter.",
+    "name": "Pancakes",
     "price": 8.99,
     "calories": 600,
     "image": "pancake_stack.jpg"
   },
   {
     "name": "Belgian Waffle",
-    "description": "A delicious Belgian waffle topped with fresh fruits and whipped cream.",
     "price": 9.49,
     "calories": 700,
     "image": "belgian_waffle.jpg"
   },
   {
     "name": "Omelette",
-    "description": "A fluffy omelette with your choice of fillings, served with hash browns.",
     "price": 10.99,
     "calories": 800,
     "image": "omelette.jpg"
   },
   {
     "name": "French Toast",
-    "description": "Thick slices of French toast served with powdered sugar and maple syrup.",
     "price": 7.99,
     "calories": 550,
     "image": "french_toast.jpg"
   },
   {
     "name": "Bacon and Eggs",
-    "description": "Classic breakfast with crispy bacon, eggs, and toast.",
     "price": 6.99,
     "calories": 500,
     "image": "bacon_and_eggs.jpg"
@@ -53,7 +48,6 @@ const foodItems = [
   },
   {
     "name": "Milkshake",
-    "description": "Creamy milkshake in various flavors.",
     "price": 4.99,
     "calories": 450,
     "image": "milkshake.jpg"

@@ -6,28 +6,24 @@ import Reviews from './Reviews';
 const foodItems = [
   {
     "name": "Fried Chicken Bucket",
-    "description": "A bucket filled with our famous fried chicken pieces.",
     "price": 12.99,
     "calories": 1200,
     "image": "fried_chicken_bucket.jpg"
   },
   {
     "name": "Zinger Combo",
-    "description": "A combo meal featuring our spicy Zinger Burger with fries and a drink.",
     "price": 9.99,
     "calories": 1000,
     "image": "zinger_combo.jpg"
   },
   {
     "name": "Twister Wrap",
-    "description": "A flavorful wrap with grilled chicken, lettuce, and signature sauce.",
     "price": 6.49,
     "calories": 650,
     "image": "twister_wrap.jpg"
   },
   {
     "name": "Popcorn Chicken",
-    "description": "Small, bite-sized pieces of seasoned and fried chicken.",
     "price": 4.99,
     "calories": 500,
     "image": "popcorn_chicken.jpg"

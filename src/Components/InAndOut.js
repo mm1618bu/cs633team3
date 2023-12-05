@@ -7,35 +7,30 @@ import imgitalian from '../img/italian.png';
 const foodItems = [
   {
     "name": "Double-Double",
-    "description": "Two beef patties, two slices of American cheese, lettuce, tomato, and spread on a bun.",
     "price": 3.99,
     "calories": 670,
     "image": imgitalian
   },
   {
     "name": "Cheeseburger",
-    "description": "A single beef patty, a slice of American cheese, lettuce, tomato, and spread on a bun.",
     "price": 2.45,
     "calories": 480,
     "image": imgitalian
   },
   {
     "name": "Hamburger",
-    "description": "A single beef patty, lettuce, tomato, and spread on a bun.",
-    "price": 2.10,
+    "price": 2.05,
     "calories": 390,
     "image": imgitalian
   },
   {
     "name": "Animal-Style Fries",
-    "description": "French fries topped with melted cheese, spread, and grilled onions.",
     "price": 3.99,
     "calories": 750,
     "image": imgitalian
   },
   {
     "name": "Milkshake",
-    "description": "A classic milkshake in flavors like chocolate, strawberry, and vanilla.",
     "price": 2.15,
     "calories": 590,
     "image": imgitalian

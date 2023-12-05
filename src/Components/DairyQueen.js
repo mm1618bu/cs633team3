@@ -6,49 +6,42 @@ import Reviews from './Reviews';
 const foodItems = [
   {
     "name": "Blizzard",
-    "description": "Creamy soft-serve ice cream blended with your choice of mix-ins.",
     "price": 4.99,
     "calories": 450,
     "image": "blizzard.jpg"
   },
   {
     "name": "DQ Bakes! Sandwich",
-    "description": "Grilled or crispy chicken with lettuce, tomato, and DQ sauce in a warm bun.",
     "price": 6.49,
     "calories": 550,
     "image": "dq_bakes_sandwich.jpg"
   },
   {
     "name": "Chicken Strip Basket",
-    "description": "Crispy chicken strips served with fries and dipping sauce.",
     "price": 8.99,
     "calories": 800,
     "image": "chicken_strip_basket.jpg"
   },
   {
-    "name": "Cheese GrillBurger",
-    "description": "Juicy burger topped with melted cheese, lettuce, tomato, and mayo.",
+    "name": "CheeseBurger",
     "price": 5.99,
     "calories": 600,
     "image": "cheese_grillburger.jpg"
   },
   {
     "name": "Sundae",
-    "description": "Vanilla soft-serve ice cream topped with hot fudge, whipped cream, and a cherry.",
     "price": 3.99,
     "calories": 400,
     "image": "sundae.jpg"
   },
   {
     "name": "Chicken Quesadilla Snack Melt",
-    "description": "Grilled chicken and melted cheese in a warm tortilla.",
     "price": 4.49,
     "calories": 350,
     "image": "chicken_quesadilla_snack_melt.jpg"
   },
   {
     "name": "DQ Shake",
-    "description": "Classic milkshake available in various flavors.",
     "price": 4.99,
     "calories": 500,
     "image": "dq_shake.jpg"

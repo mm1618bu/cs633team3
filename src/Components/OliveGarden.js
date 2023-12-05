@@ -6,35 +6,30 @@ import Reviews from './Reviews';
 const foodItems = [
   {
       "name": "Fettuccine Alfredo",
-      "description": "Fettuccine pasta with a creamy Alfredo sauce.",
       "price": 12.99,
       "calories": 830,
       "image": "fettuccine_alfredo.jpg"
   },
   {
       "name": "Tour of Italy",
-      "description": "Lasagna, Chicken Parmesan, and Fettuccine Alfredo.",
       "price": 17.99,
       "calories": 1520,
       "image": "tour_of_italy.jpg"
   },
   {
       "name": "Chicken Alfredo",
-      "description": "Grilled chicken with fettuccine pasta and Alfredo sauce.",
       "price": 14.99,
       "calories": 1200,
       "image": "chicken_alfredo.jpg"
   },
   {
       "name": "Unlimited Soup, Salad, and Breadsticks",
-      "description": "Endless servings of soup, salad, and breadsticks.",
       "price": 9.99,
       "calories": 750,
       "image": "unlimited_ssb.jpg"
   },
   {
       "name": "Eggplant Parmigiana",
-      "description": "Breaded eggplant topped with marinara and mozzarella cheese over spaghetti.",
       "price": 13.99,
       "calories": 980,
       "image": "eggplant_parmigiana.jpg"

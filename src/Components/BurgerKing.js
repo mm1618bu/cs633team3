@@ -6,7 +6,7 @@ import Reviews from './Reviews';
 const foodItems = [
   {
     "name": "Whopper",
-    "description": "The classic Burger King Whopper.",
+    "description": "The  Whopper.",
     "price": 4.99,
     "calories": 660,
     "image": "whopper.jpg"
@@ -30,7 +30,7 @@ const foodItems = [
     "image": "spicy_chicken_sandwich.jpg"
   },
   {
-    "name": "French Fries",
+    "name": "Fries",
     "price": 1.89,
     "calories": 365,
     "image": "french_fries.jpg"
@@ -42,7 +42,7 @@ const foodItems = [
     "image": "onion_rings.jpg"
   },
   {
-    "name": "Coca-Cola",
+    "name": "Coke",
     "price": 1.69,
     "calories": 140,
     "image": "coca_cola.jpg"
