@@ -54,7 +54,7 @@ function App() {
       <Header />
       <FoodCategoryList restaurants={restaurants}/>
       <Routes>
-        <Route path="mcdonalds" element={ <McDonalds/> } />
+        <Route path="/" element={ <McDonalds/> } />
         <Route path="burger-king" element={ <BurgerKing/> } />
         <Route path="wendys" element={ <Wendys/> } />
         <Route path="in-and-out" element={ <InAndOut/> } />
@@ -77,7 +77,7 @@ function App() {
         <Route path='order-history' element={<OrderHistory/>}/>
         <Route path='dashpass' element={<DashPass/>}/>
         <Route path='benefits' element={<BenefitsPopUp/>}/>
-        <Route path='/' element={<HomePage/>}/>
+        <Route path='home' element={<HomePage/>}/>
         <Route path='RestaurantCard' element={<RestaurantCard/>}/>
         <Route path='Coupons' element={<Coupons/>}/>
       </Routes>

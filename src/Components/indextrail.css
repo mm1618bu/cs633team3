@@ -1,0 +1,22 @@
+/* index.css */
+
+/* ... (your existing styles) */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .shopping-cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* ... (rest of your styles) */
+  

@@ -101,6 +101,8 @@ const OliveGarden = () => {
 
   return (
     <div className="order-page">
+      <img src="../img/Olive_GardenH.jpeg" alt="Restaurant Image" />
+
       <h1>Featured Items</h1>
       <div className="food-grid">
         {foodItems.map((item, index) => (

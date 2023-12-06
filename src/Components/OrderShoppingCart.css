@@ -1,0 +1,48 @@
+/* index.css */
+
+/* ... (your existing styles) */
+
+.checkout-container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .shopping-cart-container {
+    position: fixed;
+    margin-left: 300px;
+    width: 600px; /* Adjust the width as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px; /* Add border-radius for rounded corners if needed */
+  }
+  /* Your existing styles */
+
+.order-summary {
+    max-width: 700px; /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .quantity, .price {
+    width: 50px; /* Adjust the width as needed */
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Your existing styles */
+  
+  
+  /* ... (rest of your styles) */
+  

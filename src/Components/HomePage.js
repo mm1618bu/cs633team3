@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import Fooder from '../img/fooder.png';
 
 export const HomePage = () => {
   return (
@@ -34,7 +33,7 @@ export const HomePage = () => {
             </div>
             <img className="img" alt="Group" src="group-280.png" />
           </div>
-          <img className="FOODER-LOGO" alt="Fooder LOGO" src={Fooder} />
+          <img className="FOODER-LOGO" alt="Fooder LOGO" src="FOODER-LOGO-2.png" />
         </div>
         <div className="group-4">
           <div className="group-5">

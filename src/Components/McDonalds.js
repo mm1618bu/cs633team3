@@ -12,6 +12,7 @@ import Fench_Fries from '../img/Fench_Fries.png';
 import Apple_Slices from '../img/Apple_Slices.png';
 import Soda from '../img/Soda.png';
 
+
 const foodItems = [
     {
       "name": "Big Mac",
@@ -54,7 +55,7 @@ const foodItems = [
       "name": "Coca-Cola",
       "price": 1.69,
       "calories": 140,
-      "image": Soda
+      "image": Apple_Slices
     },
     {
       "name": "Diet Coke",
@@ -105,30 +106,31 @@ const foodItems = [
   
     return (
       <div className="order-page">
+        <h1>Featured Items</h1>
         <div className="food-grid">
           {foodItems.map((item, index) => (
             <div key={index} className="food-card">
               <Row>
-               <Col md={6}>
-              <div className="food-info">
-                <h2>{item.name}</h2>
-                <p>{item.description}</p>
-                <p>Price: ${item.price}</p>
-                <p>Calories: {item.calories} cal</p>
-                <button onClick={() => addToOrder(item)}>Add</button>
-                <button onClick={() => removeFromOrder(item)}>Remove</button>
-                {orderItems.find((orderItem) => orderItem.name === item.name) && (
-                  <div className="quantity-control">
-                    <button onClick={() => decreaseQuantity(item)}>-</button>
-                    <span>{orderItems.find((orderItem) => orderItem.name === item.name).quantity}</span>
-                    <button onClick={() => increaseQuantity(item)}>+</button>
+                <Col md={6}>
+                  <div className="food-info">
+                    <h2>{item.name}</h2>
+                    <p>{item.description}</p>
+                    <p>Price: ${item.price}</p>
+                    <p>Calories: {item.calories} cal</p>
+                    <button onClick={() => addToOrder(item)}>Add</button>
+                    <button onClick={() => removeFromOrder(item)}>Remove</button>
+                    {orderItems.find((orderItem) => orderItem.name === item.name) && (
+                      <div className="quantity-control">
+                        <button onClick={() => decreaseQuantity(item)}>-</button>
+                        <span>{orderItems.find((orderItem) => orderItem.name === item.name).quantity}</span>
+                        <button onClick={() => increaseQuantity(item)}>+</button>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-              </Col>
-              <Col md={6}>
-              <img src={item.image} alt={item.name} />
-              </Col>
+                </Col>
+                <Col md={6}>
+                  <img src={item.image} alt={item.name} />
+                </Col>
               </Row>
             </div>
           ))}

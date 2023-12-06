@@ -53,7 +53,7 @@ const foodItems = [
       "image": "diet_coke.jpg"
     }
   ];
-const McDonalds = () => {
+const OrderPage = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
@@ -72,28 +72,30 @@ const McDonalds = () => {
     const updatedCartItems = cartItems.filter((cartItem) => cartItem.name !== item.name);
     setCartItems(updatedCartItems);
   };
-
-  return (
-    <div className="order-page">
-      <h1>Featured Items</h1>
-      <div className="food-grid">
-        {foodItems.map((item, index) => (
-          <div key={index} className="food-card">
-            <div className="food-info">
-              <h2>{item.name}</h2>
-              <p>{item.description}</p>
-              <p>Price: ${item.price}</p>
-              <p>Calories: {item.calories} kcal</p>
-              <button onClick={() => addToCart(item)}>Add to Cart</button>
-              <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
+  
+    return (
+      <div className="order-page">
+        <h1>Featured Items</h1>
+        <div className="order-page img">
+          
+        </div>
+        <div className="food-grid">
+          {foodItems.map((item, index) => (
+            <div key={index} className="food-card">
+              <div className="food-info">
+                <h2>{item.name}</h2>
+                <p>{item.description}</p>
+                <p>Price: ${item.price}</p>
+                <p>Calories: {item.calories} kcal</p>
+                <button onClick={() => addToCart(item)}>Add to Cart</button>
+                <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
+              </div>
+              <img src={item.image} alt={item.name} />
             </div>
-            <img src={item.image} alt={item.name} />
-          </div>
-        ))}
+          ))}
+        </div>
+        <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
       </div>
-      <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
-    </div>
-  );
-};
-
+    );
+  };
 export default OrderPage;

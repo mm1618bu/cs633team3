@@ -1496,7 +1496,10 @@ a {
 
 .food-category-list {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    margin-right: 40px;
+    gap: 5px;
+    margin-left: 40px;
 }
 
 .category-item {
@@ -1504,9 +1507,10 @@ a {
 }
 
 .category-item img {
-  width: 150px;
-  height: 150px;
+    width: 50px;
+    height: 50px;
 }
+
 
 .order-page {
   text-align: left;
@@ -1518,7 +1522,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
 
   gap: 20px;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 
 .food-card {
@@ -1570,6 +1574,13 @@ button{
 }
 
 .order-page {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order-page.img {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
