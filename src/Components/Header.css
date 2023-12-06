@@ -1,0 +1,103 @@
+/* Header.css */
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    padding: 0 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.top-logo-container {
+    flex-grow: 1;
+}
+
+.logo {
+    height: 40px;
+}
+
+.top-options {
+    display: flex;
+    align-items: center;
+}
+
+.top-search-bar {
+    margin-right: 20px;
+}
+
+#top-button {
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: left;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Position the transparent buttons with images */
+.transparent-button-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('drop.png'); 
+    background-size: cover;
+    width: 1px; 
+    height: 1px; 
+}
+
+.transparent-button-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('drop.png'); 
+    background-size: cover;
+    width: 10px; 
+    height: 10px; 
+}
