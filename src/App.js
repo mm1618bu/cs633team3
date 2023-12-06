@@ -27,7 +27,6 @@ import Confirmation from './Components/Confirmation';
 //import DriverPortal from './Components/DriverPortal';
 //import RestaurantPortal from './Components/RestaurantPortal';
 import DashPass from './Components/DashPass';
-import VerticalNavbar from './Components/VerticalNavbar';
 import DriverPortal from './Components/DriverPortal';
 import IHOP from './Components/ihop';
 import KFC from './Components/KFC';
@@ -79,10 +78,9 @@ function App() {
         <Route path='dashpass' element={<DashPass/>}/>
         <Route path='benefits' element={<BenefitsPopUp/>}/>
         <Route path='home' element={<HomePage/>}/>
+        <Route path='RestaurantCard' element={<RestaurantCard/>}/>
+        <Route path='Coupons' element={<Coupons/>}/>
       </Routes>
-      <VerticalNavbar />
-      <RestaurantCard />
-      <Coupons/>
     </div>
     
   );

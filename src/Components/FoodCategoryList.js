@@ -6,39 +6,39 @@ import './index.css';
 const FoodCategoryList = () => {
   const categories = [
     {
-        name: 'Fruits',
+        name: 'Continental',
         image: imgitalian,
       },
       {
-        name: 'Vegetables',
+        name: 'Italian',
         image: imgitalian,
       },
       {
-        name: 'Meat',
+        name: 'Burgers',
         image: imgitalian,
       },
       {
-        name: 'Fruits',
+        name: 'Indian',
         image: imgitalian,
       },
       {
-        name: 'Vegetables',
+        name: 'Sandwiches',
         image: imgitalian,
       },
       {
-        name: 'Meat',
+        name: 'Mexican',
         image: imgwrap,
       },
       {
-        name: 'Fruits',
+        name: 'Chinese',
         image: imgwrap,
       },
       {
-        name: 'Vegetables',
+        name: 'Pizza',
         image: imgwrap,
       },
       {
-        name: 'Meat',
+        name: 'Desserts',
         image: imgwrap,
       },
 
