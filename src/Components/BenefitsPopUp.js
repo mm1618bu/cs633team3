@@ -1,7 +1,9 @@
 import React from "react";
 import "./Benefits.css";
-import "./benefits1.css";
-
+import Bowl from '../img/riceBowl.png';
+import Grocery from '../img/grocery.png';
+import Takeout from '../img/takeAway.png';
+import Coupon from '../img/coupon.png';
 export const BenefitsPopUp = () => {
   return (
     <div className="benefits-pop-up">
@@ -25,7 +27,7 @@ export const BenefitsPopUp = () => {
           <div className="overlap-group">
             <div className="group-5">
               <div className="text-wrapper-6">Restaurant Delivery</div>
-              <img className="group-6" alt="Group" src="group-203.png" />
+              <img className="group-6" alt="Group" src={Bowl} />
             </div>
             <p className="p">
               FooderPass Members get $0 delivery fees and reduced services fee on all eligible orders that meet the
@@ -43,7 +45,7 @@ export const BenefitsPopUp = () => {
             <div className="group-8">
               <div className="text-wrapper-7">Pickup</div>
               <div className="img-wrapper">
-                <img className="take-away-food" alt="Take away food" src="take-away-food.png" />
+                <img className="take-away-food" alt="Take away food" src={Takeout} />
               </div>
             </div>
           </div>
@@ -61,7 +63,7 @@ export const BenefitsPopUp = () => {
             <div className="group-10">
               <div className="grocery-more-2">Grocery &amp; More</div>
               <div className="group-11">
-                <img className="vegetarian-food" alt="Vegetarian food" src="vegetarian-food.png" />
+                <img className="vegetarian-food" alt="Vegetarian food" src={Grocery} />
               </div>
             </div>
           </div>
@@ -77,7 +79,7 @@ export const BenefitsPopUp = () => {
               <div className="text-wrapper-10">Exclusive Offers</div>
             </div>
             <div className="img-wrapper">
-              <img className="vector-2" alt="Vector" src="vector-2.svg" />
+              <img className="vector-2" alt="Vector" src={Coupon} />
             </div>
           </div>
         </div>
