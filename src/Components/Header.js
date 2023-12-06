@@ -72,7 +72,7 @@ function Header() {
         </div>
         <div className="dropdown">
           <button className="dropbtn" onClick={toggleFirstDropdown}>
-           || 
+           Account
           </button>
           {firstDropdownVisible && (
             <div className="dropdown-content">
@@ -84,7 +84,7 @@ function Header() {
         </div>
         <div className="dropdown">
           <button className="dropbtn" onClick={toggleSecondDropdown}>
-            |||
+            Stores
           </button>
           {secondDropdownVisible && (
             <div className="dropdown-content">

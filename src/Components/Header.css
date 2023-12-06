@@ -29,11 +29,12 @@
 }
 
 #top-button {
-    background-color: #4caf50; 
+    background-color: #039387; 
     color: white;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
+    margin-top: 16px;
 }
 
 /* Dropdown styles */
