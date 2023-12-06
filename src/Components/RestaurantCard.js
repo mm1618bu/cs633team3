@@ -1,18 +1,18 @@
 import React from 'react';
 import './index.css';
-import restaurantsData from './restaurantList.json';
+import restaurantList from './restaurantList';
 
 function RestaurantCard() {
-  if (!restaurantsData || !Array.isArray(restaurantsData)) {
+  if (!restaurantList || !Array.isArray(restaurantList)) {
     return <div>No restaurant data available.</div>;
   }
 
   return (
     <div className="restaurant-grid">
-      {restaurantsData.map((restaurant) => (
+      {restaurantList.map((restaurant) => (
         <div className="restaurant-card" key={restaurant.name}>
           {restaurant.image && (
-            <img className="restaurant-image" src={process.env.PUBLIC_URL + restaurant.image} alt={restaurant.name} />
+            <img className="restaurant-image" src={restaurant.image} alt={restaurant.name} />
           )}
           {restaurant.url && (
             <a href={restaurant.url}>

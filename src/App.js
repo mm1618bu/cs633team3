@@ -14,7 +14,7 @@ import InAndOut from './Components/InAndOut';
 import Chipotle from './Components/Chipotle';
 import Subway from './Components/Subway';
 import RestaurantCard from './Components/RestaurantCard';
-import restaurantsData from './Components/restaurantList.json';
+import restaurantsData from './Components/restaurantList';
 import PaneraBread from './Components/PaneraBread';
 import OliveGarden from './Components/OliveGarden';
 import TGIFridays from './Components/TGIFridays';

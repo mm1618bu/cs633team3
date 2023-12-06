@@ -1,11 +1,28 @@
-[
+import PaneraBread from "../img/logos/panera_bread.png";
+import OliveGarden from "../img/logos/olive_garden.svg";
+import TGIFridays from "../img/logos/tgi_fridays.png";
+import BuffaloWildWings from "../img/logos/buffalo_wild_wings.png";
+import BurgerKing from "../img/logos/Burger_king.png";
+import DairyQueen from "../img/logos/dairy_queen.png";
+import Dennys from "../img/logos/denny's.jpeg";
+import IHOP from "../img/logos/ihop.png";
+import InAndOut from "../img/logos/in-n-out.png";
+import KFC from "../img/logos/kfc.png";
+import McDonalds from "../img/logos/mcdonald's.jpeg";
+import PizzaHut from "../img/logos/pizza_hut.png";
+import RedLobster from "../img/logos/red_lobster.jpeg";
+import TacoBell from "../img/logos/tacobell.png";
+import Wendys from "../img/logos/wendy's.png";
+import Chipotle from "../img/logos/chipotle.png";
+
+const restaurantList = [
     {
       "name": "Panera Bread",
       "rating": 2.8,
       "distance": 4.3,
       "deliveryTime": 43,
       "cuisine": "Somali",
-      "image": "/img/wrap.png",
+      "image": PaneraBread,
       "url": "/panera-bread"
     },
     {
@@ -14,7 +31,7 @@
       "distance": 3.3,
       "deliveryTime": 24,
       "cuisine": "Italian",
-      "image": "olive_garden.jpg",
+      "image":OliveGarden,
       "url": "/olive-garden"
     },
     {
@@ -23,7 +40,7 @@
       "distance": 6.1,
       "deliveryTime": 40,
       "cuisine": "American",
-      "image": "tgi_fridays.jpg",
+      "image": TGIFridays,
       "url": "/tgi-fridays"
     },
     {
@@ -32,7 +49,7 @@
       "distance": 7.9,
       "deliveryTime": 53,
       "cuisine": "Pizza",
-      "image": "pizza_hut.jpg",
+      "image": PizzaHut,
       "url": "/pizza-hut"
     },
     {
@@ -41,7 +58,7 @@
       "distance": 6.2,
       "deliveryTime": 3,
       "cuisine": "Fast Food",
-      "image": "kfc.jpg",
+      "image": KFC,
       "url": "/kfc"
     },
     {
@@ -50,7 +67,7 @@
       "distance": 1.6,
       "deliveryTime": 52,
       "cuisine": "American",
-      "image": "ihop.jpg",
+      "image": IHOP,
       "url": "/ihop"
     },
     {
@@ -59,7 +76,7 @@
       "distance": 4.1,
       "deliveryTime": 46,
       "cuisine": "American",
-      "image": "dennys.jpg",
+      "image": Dennys,
       "url": "/dennys"
     },
     {
@@ -68,7 +85,7 @@
       "distance": 3.8,
       "deliveryTime": 2,
       "cuisine": "Fast Food",
-      "image": "dairy_queen.jpg",
+      "image": DairyQueen,
       "url": "/dairy-queen"
     },
     {
@@ -77,7 +94,7 @@
       "distance": 4.7,
       "deliveryTime": 21,
       "cuisine": "American",
-      "image": "buffalo_wild_wings.jpg",
+      "image": BuffaloWildWings,
       "url": "/buffalo-wild-wings"
     },
     {
@@ -86,7 +103,7 @@
       "distance": 8.6,
       "deliveryTime": 42,
       "cuisine": "Mexican",
-      "image": "taco_bell.jpg",
+      "image": TacoBell,
       "url": "/taco-bell"
     },
     {
@@ -95,7 +112,7 @@
       "distance": 1.5,
       "deliveryTime": 11,
       "cuisine": "Seafood",
-      "image": "red_lobster.jpg",
+      "image": RedLobster,
       "url": "/red-lobster"
     },
     {
@@ -104,7 +121,7 @@
       "distance": 3.5,
       "deliveryTime": 15,
       "cuisine": "Fast Food",
-      "image": "mcdonalds.jpg",
+      "image": McDonalds,
       "url": "/"
     },
     {
@@ -113,7 +130,7 @@
       "distance": 2.8,
       "deliveryTime": 10,
       "cuisine": "Fast Food",
-      "image": "burger_king.jpg",
+      "image": BurgerKing,
       "url": "/burger-king"
     },
     {
@@ -122,7 +139,7 @@
       "distance": 4.2,
       "deliveryTime": 20,
       "cuisine": "Fast Food",
-      "image": "wendys.jpg",
+      "image": Wendys,
       "url": "/wendys"
     },
     {
@@ -131,7 +148,7 @@
       "distance": 5.1,
       "deliveryTime": 25,
       "cuisine": "Mexican",
-      "image": "chipotle.jpg",
+      "image": Chipotle,
       "url": "/chipotle"
     },
     {
@@ -140,7 +157,9 @@
       "distance": 7.3,
       "deliveryTime": 30,
       "cuisine": "Fast Food",
-      "image": "innout.jpg",
+      "image": InAndOut,
       "url": "/innout"
     }
-  ]
+  ];
+
+  export default restaurantList;
